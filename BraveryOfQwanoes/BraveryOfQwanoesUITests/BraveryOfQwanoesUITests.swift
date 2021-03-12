@@ -2,7 +2,7 @@
 //  BraveryOfQwanoesUITests.swift
 //  BraveryOfQwanoesUITests
 //
-//  Created by Ana Karolina Costa da Silva on 11/03/21.
+//  Created by Anderson Alencar on 12/03/21.
 //
 
 import XCTest
