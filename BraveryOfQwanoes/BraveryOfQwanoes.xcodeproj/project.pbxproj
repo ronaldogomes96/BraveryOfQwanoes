@@ -7,10 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C3E25FBB142001B0789 /* EarthScene.swift */; };
+		77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4325FBB1A2001B0789 /* GameViewController.swift */; };
+		77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4825FBB1D0001B0789 /* CharacterBoat.swift */; };
+		77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4D25FBB1FE001B0789 /* Sea.swift */; };
+		77956C5325FBB265001B0789 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C5225FBB265001B0789 /* Background.swift */; };
+		77956C5825FBB27F001B0789 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C5725FBB27F001B0789 /* Rain.swift */; };
+		77956C5D25FBB297001B0789 /* Toten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C5C25FBB297001B0789 /* Toten.swift */; };
+		77956C6225FBB2AB001B0789 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C6125FBB2AB001B0789 /* Dialog.swift */; };
+		77956C6725FBB338001B0789 /* SoundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C6625FBB338001B0789 /* SoundComponent.swift */; };
+		77956C6C25FBB356001B0789 /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C6B25FBB356001B0789 /* PlayerControlComponent.swift */; };
+		77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C7025FBB370001B0789 /* CharacterBoatAnimatedComponent.swift */; };
+		77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */; };
+		77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */; };
+		77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8225FBB3D1001B0789 /* DialogsComponent.swift */; };
+		77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8725FBB3EB001B0789 /* SensorialComponent.swift */; };
+		77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8C25FBB425001B0789 /* ConfigurationController.swift */; };
+		77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9125FBB456001B0789 /* EnceladusScene.swift */; };
+		77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9725FBB50B001B0789 /* EarthSystem.swift */; };
+		77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
 		E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */; };
-		E2703DA225FB8E9B00F374BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DA125FB8E9B00F374BA /* ViewController.swift */; };
-		E2703DA525FB8E9B00F374BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA325FB8E9B00F374BA /* Main.storyboard */; };
+		E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DA125FB8E9B00F374BA /* MenuViewController.swift */; };
+		E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA325FB8E9B00F374BA /* Menu.storyboard */; };
 		E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA625FB8E9C00F374BA /* Assets.xcassets */; };
 		E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */; };
 		E2703DB525FB8E9D00F374BA /* BraveryOfQwanoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */; };
@@ -35,11 +54,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77956C3E25FBB142001B0789 /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
+		77956C4325FBB1A2001B0789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		77956C4825FBB1D0001B0789 /* CharacterBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoat.swift; sourceTree = "<group>"; };
+		77956C4D25FBB1FE001B0789 /* Sea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sea.swift; sourceTree = "<group>"; };
+		77956C5225FBB265001B0789 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		77956C5725FBB27F001B0789 /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		77956C5C25FBB297001B0789 /* Toten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toten.swift; sourceTree = "<group>"; };
+		77956C6125FBB2AB001B0789 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		77956C6625FBB338001B0789 /* SoundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundComponent.swift; sourceTree = "<group>"; };
+		77956C6B25FBB356001B0789 /* PlayerControlComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlComponent.swift; sourceTree = "<group>"; };
+		77956C7025FBB370001B0789 /* CharacterBoatAnimatedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoatAnimatedComponent.swift; sourceTree = "<group>"; };
+		77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaAnimatedComponent.swift; sourceTree = "<group>"; };
+		77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainAnimatedComponent.swift; sourceTree = "<group>"; };
+		77956C8225FBB3D1001B0789 /* DialogsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponent.swift; sourceTree = "<group>"; };
+		77956C8725FBB3EB001B0789 /* SensorialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorialComponent.swift; sourceTree = "<group>"; };
+		77956C8C25FBB425001B0789 /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
+		77956C9125FBB456001B0789 /* EnceladusScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusScene.swift; sourceTree = "<group>"; };
+		77956C9725FBB50B001B0789 /* EarthSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthSystem.swift; sourceTree = "<group>"; };
+		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2703DA125FB8E9B00F374BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2703DA425FB8E9B00F374BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2703DA125FB8E9B00F374BA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E2703DA425FB8E9B00F374BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
 		E2703DA625FB8E9C00F374BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2703DA925FB8E9C00F374BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2703DAB25FB8E9C00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +114,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77956C2125FBA85C001B0789 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */,
+				E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		77956C2225FBA865001B0789 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2703DA325FB8E9B00F374BA /* Menu.storyboard */,
+				E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77956C2325FBA86C001B0789 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2703DA125FB8E9B00F374BA /* MenuViewController.swift */,
+				77956C4325FBB1A2001B0789 /* GameViewController.swift */,
+				77956C8C25FBB425001B0789 /* ConfigurationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77956C2425FBA87A001B0789 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				77956C3E25FBB142001B0789 /* EarthScene.swift */,
+				77956C9125FBB456001B0789 /* EnceladusScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		77956C2525FBA886001B0789 /* Entity-Component */ = {
+			isa = PBXGroup;
+			children = (
+				77956C3625FBAFFF001B0789 /* Entity */,
+				77956C3725FBB008001B0789 /* Component */,
+			);
+			path = "Entity-Component";
+			sourceTree = "<group>";
+		};
+		77956C2925FBA93A001B0789 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E2703DA625FB8E9C00F374BA /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		77956C3625FBAFFF001B0789 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				77956C4825FBB1D0001B0789 /* CharacterBoat.swift */,
+				77956C4D25FBB1FE001B0789 /* Sea.swift */,
+				77956C5225FBB265001B0789 /* Background.swift */,
+				77956C5725FBB27F001B0789 /* Rain.swift */,
+				77956C5C25FBB297001B0789 /* Toten.swift */,
+				77956C6125FBB2AB001B0789 /* Dialog.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		77956C3725FBB008001B0789 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				77956C6625FBB338001B0789 /* SoundComponent.swift */,
+				77956C6B25FBB356001B0789 /* PlayerControlComponent.swift */,
+				77956C7025FBB370001B0789 /* CharacterBoatAnimatedComponent.swift */,
+				77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */,
+				77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */,
+				77956C8225FBB3D1001B0789 /* DialogsComponent.swift */,
+				77956C8725FBB3EB001B0789 /* SensorialComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		77956C9625FBB484001B0789 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				77956C9725FBB50B001B0789 /* EarthSystem.swift */,
+				77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		E2703D9125FB8E9B00F374BA = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +227,13 @@
 		E2703D9C25FB8E9B00F374BA /* BraveryOfQwanoes */ = {
 			isa = PBXGroup;
 			children = (
-				E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */,
-				E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */,
-				E2703DA125FB8E9B00F374BA /* ViewController.swift */,
-				E2703DA325FB8E9B00F374BA /* Main.storyboard */,
-				E2703DA625FB8E9C00F374BA /* Assets.xcassets */,
-				E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */,
+				77956C2225FBA865001B0789 /* View */,
+				77956C2325FBA86C001B0789 /* Controllers */,
+				77956C2425FBA87A001B0789 /* Scenes */,
+				77956C2525FBA886001B0789 /* Entity-Component */,
+				77956C9625FBB484001B0789 /* System */,
+				77956C2125FBA85C001B0789 /* Shared */,
+				77956C2925FBA93A001B0789 /* Assets */,
 				E2703DAB25FB8E9C00F374BA /* Info.plist */,
 			);
 			path = BraveryOfQwanoes;
@@ -234,7 +363,7 @@
 			files = (
 				E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
-				E2703DA525FB8E9B00F374BA /* Main.storyboard in Resources */,
+				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +408,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2703DA225FB8E9B00F374BA /* ViewController.swift in Sources */,
+				77956C6225FBB2AB001B0789 /* Dialog.swift in Sources */,
+				77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */,
+				77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */,
+				77956C6C25FBB356001B0789 /* PlayerControlComponent.swift in Sources */,
+				77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */,
+				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
+				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
+				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
+				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
+				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
+				77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */,
+				77956C5325FBB265001B0789 /* Background.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
+				77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */,
+				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
+				77956C6725FBB338001B0789 /* SoundComponent.swift in Sources */,
+				77956C5D25FBB297001B0789 /* Toten.swift in Sources */,
+				77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */,
+				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
+				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
+				77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,12 +465,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E2703DA325FB8E9B00F374BA /* Main.storyboard */ = {
+		E2703DA325FB8E9B00F374BA /* Menu.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E2703DA425FB8E9B00F374BA /* Base */,
 			);
-			name = Main.storyboard;
+			name = Menu.storyboard;
 			sourceTree = "<group>";
 		};
 		E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */ = {
@@ -458,7 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

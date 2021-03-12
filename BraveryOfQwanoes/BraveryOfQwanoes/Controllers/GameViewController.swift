@@ -1,16 +1,18 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  BraveryOfQwanoes
 //
-//  Created by Anderson Alencar on 12/03/21.
+//  Created by Ronaldo Gomes on 12/03/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+
 }
