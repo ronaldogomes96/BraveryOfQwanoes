@@ -11,4 +11,8 @@ import SpriteKit
 
 class EarthScene: SKScene {
     
+    override func didMove(to view: SKView) {
+        super.didMove(to: view)
+    }
+
 }
