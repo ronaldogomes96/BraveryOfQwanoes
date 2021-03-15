@@ -15,12 +15,13 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGeture))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(tap)
     }
 
-    @objc func tapGeture() {
-        // do something here
-        print("Tap to game")
+    @objc func tapGesture() {
+        let controller = GameViewController()
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
 }
