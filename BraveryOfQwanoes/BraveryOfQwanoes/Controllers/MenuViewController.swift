@@ -9,8 +9,18 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var configurationButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGeture))
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func tapGeture() {
+        // do something here
+        print("Tap to game")
     }
 }

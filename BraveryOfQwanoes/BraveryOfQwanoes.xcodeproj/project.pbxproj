@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
+		77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */; };
 		77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C3E25FBB142001B0789 /* EarthScene.swift */; };
 		77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4325FBB1A2001B0789 /* GameViewController.swift */; };
 		77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4825FBB1D0001B0789 /* CharacterBoat.swift */; };
@@ -22,7 +24,6 @@
 		77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */; };
 		77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8225FBB3D1001B0789 /* DialogsComponent.swift */; };
 		77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8725FBB3EB001B0789 /* SensorialComponent.swift */; };
-		77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8C25FBB425001B0789 /* ConfigurationController.swift */; };
 		77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9125FBB456001B0789 /* EnceladusScene.swift */; };
 		77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9725FBB50B001B0789 /* EarthSystem.swift */; };
 		77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
+		77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		77956C3E25FBB142001B0789 /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
 		77956C4325FBB1A2001B0789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		77956C4825FBB1D0001B0789 /* CharacterBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoat.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainAnimatedComponent.swift; sourceTree = "<group>"; };
 		77956C8225FBB3D1001B0789 /* DialogsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponent.swift; sourceTree = "<group>"; };
 		77956C8725FBB3EB001B0789 /* SensorialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorialComponent.swift; sourceTree = "<group>"; };
-		77956C8C25FBB425001B0789 /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		77956C9125FBB456001B0789 /* EnceladusScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusScene.swift; sourceTree = "<group>"; };
 		77956C9725FBB50B001B0789 /* EarthSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthSystem.swift; sourceTree = "<group>"; };
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
@@ -126,8 +128,9 @@
 		77956C2225FBA865001B0789 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E2703DA325FB8E9B00F374BA /* Menu.storyboard */,
 				E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */,
+				E2703DA325FB8E9B00F374BA /* Menu.storyboard */,
+				77558CE425FF8E08003A74ED /* Configuration.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				E2703DA125FB8E9B00F374BA /* MenuViewController.swift */,
+				77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */,
 				77956C4325FBB1A2001B0789 /* GameViewController.swift */,
-				77956C8C25FBB425001B0789 /* ConfigurationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
+				77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,9 +420,9 @@
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
+				77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */,
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
-				77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
