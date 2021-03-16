@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7788F0692600DF1000E0A76A /* PartOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0682600DF1000E0A76A /* PartOne.json */; };
+		7788F06E2600DF3600E0A76A /* PartTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F06D2600DF3600E0A76A /* PartTwo.json */; };
+		7788F0732600DF6F00E0A76A /* Introduction.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0722600DF6F00E0A76A /* Introduction.json */; };
+		7788F07B2600DF9100E0A76A /* PartThree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F07A2600DF9100E0A76A /* PartThree.json */; };
+		7788F0802600DFA600E0A76A /* PartFour.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F07F2600DFA600E0A76A /* PartFour.json */; };
+		7788F0852600DFB900E0A76A /* PartFive.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0842600DFB900E0A76A /* PartFive.json */; };
 		77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C3E25FBB142001B0789 /* EarthScene.swift */; };
 		77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4325FBB1A2001B0789 /* GameViewController.swift */; };
 		77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4825FBB1D0001B0789 /* CharacterBoat.swift */; };
@@ -54,6 +60,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7788F0682600DF1000E0A76A /* PartOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartOne.json; sourceTree = "<group>"; };
+		7788F06D2600DF3600E0A76A /* PartTwo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartTwo.json; sourceTree = "<group>"; };
+		7788F0722600DF6F00E0A76A /* Introduction.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Introduction.json; sourceTree = "<group>"; };
+		7788F07A2600DF9100E0A76A /* PartThree.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartThree.json; sourceTree = "<group>"; };
+		7788F07F2600DFA600E0A76A /* PartFour.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFour.json; sourceTree = "<group>"; };
+		7788F0842600DFB900E0A76A /* PartFive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFive.json; sourceTree = "<group>"; };
 		77956C3E25FBB142001B0789 /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
 		77956C4325FBB1A2001B0789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		77956C4825FBB1D0001B0789 /* CharacterBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoat.swift; sourceTree = "<group>"; };
@@ -114,6 +126,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7788F0632600DD7F00E0A76A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7788F0672600DEE200E0A76A /* History Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7788F0672600DEE200E0A76A /* History Data */ = {
+			isa = PBXGroup;
+			children = (
+				7788F0722600DF6F00E0A76A /* Introduction.json */,
+				7788F0682600DF1000E0A76A /* PartOne.json */,
+				7788F06D2600DF3600E0A76A /* PartTwo.json */,
+				7788F07A2600DF9100E0A76A /* PartThree.json */,
+				7788F07F2600DFA600E0A76A /* PartFour.json */,
+				7788F0842600DFB900E0A76A /* PartFive.json */,
+			);
+			path = "History Data";
+			sourceTree = "<group>";
+		};
 		77956C2125FBA85C001B0789 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +265,7 @@
 				77956C2425FBA87A001B0789 /* Scenes */,
 				77956C2525FBA886001B0789 /* Entity-Component */,
 				77956C9625FBB484001B0789 /* System */,
+				7788F0632600DD7F00E0A76A /* Model */,
 				77956C2125FBA85C001B0789 /* Shared */,
 				77956C2925FBA93A001B0789 /* Assets */,
 				E2703DAB25FB8E9C00F374BA /* Info.plist */,
@@ -362,8 +396,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */,
+				7788F06E2600DF3600E0A76A /* PartTwo.json in Resources */,
+				7788F0692600DF1000E0A76A /* PartOne.json in Resources */,
+				7788F0802600DFA600E0A76A /* PartFour.json in Resources */,
+				7788F07B2600DF9100E0A76A /* PartThree.json in Resources */,
+				7788F0852600DFB900E0A76A /* PartFive.json in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
+				7788F0732600DF6F00E0A76A /* Introduction.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
