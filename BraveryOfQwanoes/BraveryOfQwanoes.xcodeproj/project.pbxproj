@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7788F0692600DF1000E0A76A /* PartOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0682600DF1000E0A76A /* PartOne.json */; };
+		7788F06E2600DF3600E0A76A /* PartTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F06D2600DF3600E0A76A /* PartTwo.json */; };
+		7788F0732600DF6F00E0A76A /* Introduction.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0722600DF6F00E0A76A /* Introduction.json */; };
+		7788F07B2600DF9100E0A76A /* PartThree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F07A2600DF9100E0A76A /* PartThree.json */; };
+		7788F0802600DFA600E0A76A /* PartFour.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F07F2600DFA600E0A76A /* PartFour.json */; };
+		7788F0852600DFB900E0A76A /* PartFive.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0842600DFB900E0A76A /* PartFive.json */; };
+		7788F0952600E30200E0A76A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0942600E30200E0A76A /* History.swift */; };
+		7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0992600E39F00E0A76A /* HistoryData.swift */; };
+		7788F0A22600E84F00E0A76A /* HIstoryDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */; };
 		77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C3E25FBB142001B0789 /* EarthScene.swift */; };
 		77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4325FBB1A2001B0789 /* GameViewController.swift */; };
 		77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4825FBB1D0001B0789 /* CharacterBoat.swift */; };
@@ -32,7 +41,6 @@
 		E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA325FB8E9B00F374BA /* Menu.storyboard */; };
 		E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA625FB8E9C00F374BA /* Assets.xcassets */; };
 		E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */; };
-		E2703DB525FB8E9D00F374BA /* BraveryOfQwanoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */; };
 		E2703DC025FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7788F0682600DF1000E0A76A /* PartOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartOne.json; sourceTree = "<group>"; };
+		7788F06D2600DF3600E0A76A /* PartTwo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartTwo.json; sourceTree = "<group>"; };
+		7788F0722600DF6F00E0A76A /* Introduction.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Introduction.json; sourceTree = "<group>"; };
+		7788F07A2600DF9100E0A76A /* PartThree.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartThree.json; sourceTree = "<group>"; };
+		7788F07F2600DFA600E0A76A /* PartFour.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFour.json; sourceTree = "<group>"; };
+		7788F0842600DFB900E0A76A /* PartFive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFive.json; sourceTree = "<group>"; };
+		7788F0942600E30200E0A76A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		7788F0992600E39F00E0A76A /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
+		7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoryDataTests.swift; sourceTree = "<group>"; };
 		77956C3E25FBB142001B0789 /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
 		77956C4325FBB1A2001B0789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		77956C4825FBB1D0001B0789 /* CharacterBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoat.swift; sourceTree = "<group>"; };
@@ -82,7 +99,6 @@
 		E2703DA925FB8E9C00F374BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2703DAB25FB8E9C00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2703DB025FB8E9D00F374BA /* BraveryOfQwanoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesTests.swift; sourceTree = "<group>"; };
 		E2703DB625FB8E9D00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2703DBB25FB8E9D00F374BA /* BraveryOfQwanoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesUITests.swift; sourceTree = "<group>"; };
@@ -114,6 +130,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7788F0632600DD7F00E0A76A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7788F0672600DEE200E0A76A /* History Data */,
+				7788F0942600E30200E0A76A /* History.swift */,
+				7788F0992600E39F00E0A76A /* HistoryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7788F0672600DEE200E0A76A /* History Data */ = {
+			isa = PBXGroup;
+			children = (
+				7788F0722600DF6F00E0A76A /* Introduction.json */,
+				7788F0682600DF1000E0A76A /* PartOne.json */,
+				7788F06D2600DF3600E0A76A /* PartTwo.json */,
+				7788F07A2600DF9100E0A76A /* PartThree.json */,
+				7788F07F2600DFA600E0A76A /* PartFour.json */,
+				7788F0842600DFB900E0A76A /* PartFive.json */,
+			);
+			path = "History Data";
+			sourceTree = "<group>";
+		};
 		77956C2125FBA85C001B0789 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +271,7 @@
 				77956C2425FBA87A001B0789 /* Scenes */,
 				77956C2525FBA886001B0789 /* Entity-Component */,
 				77956C9625FBB484001B0789 /* System */,
+				7788F0632600DD7F00E0A76A /* Model */,
 				77956C2125FBA85C001B0789 /* Shared */,
 				77956C2925FBA93A001B0789 /* Assets */,
 				E2703DAB25FB8E9C00F374BA /* Info.plist */,
@@ -242,7 +282,7 @@
 		E2703DB325FB8E9D00F374BA /* BraveryOfQwanoesTests */ = {
 			isa = PBXGroup;
 			children = (
-				E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */,
+				7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */,
 				E2703DB625FB8E9D00F374BA /* Info.plist */,
 			);
 			path = BraveryOfQwanoesTests;
@@ -328,6 +368,7 @@
 					};
 					E2703DAF25FB8E9D00F374BA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = E2703D9925FB8E9B00F374BA;
 					};
 					E2703DBA25FB8E9D00F374BA = {
@@ -362,8 +403,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */,
+				7788F06E2600DF3600E0A76A /* PartTwo.json in Resources */,
+				7788F0692600DF1000E0A76A /* PartOne.json in Resources */,
+				7788F0802600DFA600E0A76A /* PartFour.json in Resources */,
+				7788F07B2600DF9100E0A76A /* PartThree.json in Resources */,
+				7788F0852600DFB900E0A76A /* PartFive.json in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
+				7788F0732600DF6F00E0A76A /* Introduction.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,11 +463,13 @@
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
+				7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */,
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
 				77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
+				7788F0952600E30200E0A76A /* History.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
 				77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */,
 				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
@@ -437,7 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2703DB525FB8E9D00F374BA /* BraveryOfQwanoesTests.swift in Sources */,
+				7788F0A22600E84F00E0A76A /* HIstoryDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +692,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = BraveryOfQwanoesTests/Info.plist;
@@ -654,6 +704,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andersonalencar.BraveryOfQwanoesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BraveryOfQwanoes.app/BraveryOfQwanoes";
@@ -665,6 +716,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = BraveryOfQwanoesTests/Info.plist;
