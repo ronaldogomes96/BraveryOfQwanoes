@@ -10,13 +10,15 @@ import UIKit
 class MenuViewController: UIViewController {
 
     @IBOutlet weak var configurationButton: UIButton!
-
+    @IBOutlet weak var startLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(tap)
+        startLabel.titleLabel?.font = .SueEllenFranciscoRegularTittle
     }
 
     @objc func tapGesture() {
