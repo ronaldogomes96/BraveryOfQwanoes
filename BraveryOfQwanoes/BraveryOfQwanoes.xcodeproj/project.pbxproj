@@ -13,6 +13,8 @@
 		7788F07B2600DF9100E0A76A /* PartThree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F07A2600DF9100E0A76A /* PartThree.json */; };
 		7788F0802600DFA600E0A76A /* PartFour.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F07F2600DFA600E0A76A /* PartFour.json */; };
 		7788F0852600DFB900E0A76A /* PartFive.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0842600DFB900E0A76A /* PartFive.json */; };
+		7788F0952600E30200E0A76A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0942600E30200E0A76A /* History.swift */; };
+		7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0992600E39F00E0A76A /* HistoryData.swift */; };
 		77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C3E25FBB142001B0789 /* EarthScene.swift */; };
 		77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4325FBB1A2001B0789 /* GameViewController.swift */; };
 		77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4825FBB1D0001B0789 /* CharacterBoat.swift */; };
@@ -66,6 +68,8 @@
 		7788F07A2600DF9100E0A76A /* PartThree.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartThree.json; sourceTree = "<group>"; };
 		7788F07F2600DFA600E0A76A /* PartFour.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFour.json; sourceTree = "<group>"; };
 		7788F0842600DFB900E0A76A /* PartFive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFive.json; sourceTree = "<group>"; };
+		7788F0942600E30200E0A76A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		7788F0992600E39F00E0A76A /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
 		77956C3E25FBB142001B0789 /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
 		77956C4325FBB1A2001B0789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		77956C4825FBB1D0001B0789 /* CharacterBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoat.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				7788F0672600DEE200E0A76A /* History Data */,
+				7788F0942600E30200E0A76A /* History.swift */,
+				7788F0992600E39F00E0A76A /* HistoryData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,11 +462,13 @@
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
+				7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */,
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
 				77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
+				7788F0952600E30200E0A76A /* History.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
 				77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */,
 				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
