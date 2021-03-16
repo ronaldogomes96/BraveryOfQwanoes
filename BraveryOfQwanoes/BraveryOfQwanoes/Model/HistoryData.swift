@@ -16,10 +16,10 @@ class HistoryData {
     }
 
     func getHistoryAndPuzzleData() -> History? {
-        let bundlePath = Bundle.main.path(forResource: jsonName, ofType: "json")!
         do {
-            guard let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) else {
-                return nil
+            guard let bundlePath = Bundle.main.path(forResource: jsonName, ofType: "json"),
+                  let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) else {
+                        return nil
             }
             let decodedData = try JSONDecoder().decode(History.self, from: jsonData)
             return decodedData

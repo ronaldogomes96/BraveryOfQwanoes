@@ -15,6 +15,7 @@
 		7788F0852600DFB900E0A76A /* PartFive.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0842600DFB900E0A76A /* PartFive.json */; };
 		7788F0952600E30200E0A76A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0942600E30200E0A76A /* History.swift */; };
 		7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0992600E39F00E0A76A /* HistoryData.swift */; };
+		7788F0A22600E84F00E0A76A /* HIstoryDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */; };
 		77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C3E25FBB142001B0789 /* EarthScene.swift */; };
 		77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4325FBB1A2001B0789 /* GameViewController.swift */; };
 		77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C4825FBB1D0001B0789 /* CharacterBoat.swift */; };
@@ -40,7 +41,6 @@
 		E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA325FB8E9B00F374BA /* Menu.storyboard */; };
 		E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA625FB8E9C00F374BA /* Assets.xcassets */; };
 		E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */; };
-		E2703DB525FB8E9D00F374BA /* BraveryOfQwanoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */; };
 		E2703DC025FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +70,7 @@
 		7788F0842600DFB900E0A76A /* PartFive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartFive.json; sourceTree = "<group>"; };
 		7788F0942600E30200E0A76A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		7788F0992600E39F00E0A76A /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
+		7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoryDataTests.swift; sourceTree = "<group>"; };
 		77956C3E25FBB142001B0789 /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
 		77956C4325FBB1A2001B0789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		77956C4825FBB1D0001B0789 /* CharacterBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoat.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		E2703DA925FB8E9C00F374BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2703DAB25FB8E9C00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2703DB025FB8E9D00F374BA /* BraveryOfQwanoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesTests.swift; sourceTree = "<group>"; };
 		E2703DB625FB8E9D00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2703DBB25FB8E9D00F374BA /* BraveryOfQwanoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesUITests.swift; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 		E2703DB325FB8E9D00F374BA /* BraveryOfQwanoesTests */ = {
 			isa = PBXGroup;
 			children = (
-				E2703DB425FB8E9D00F374BA /* BraveryOfQwanoesTests.swift */,
+				7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */,
 				E2703DB625FB8E9D00F374BA /* Info.plist */,
 			);
 			path = BraveryOfQwanoesTests;
@@ -368,6 +368,7 @@
 					};
 					E2703DAF25FB8E9D00F374BA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = E2703D9925FB8E9B00F374BA;
 					};
 					E2703DBA25FB8E9D00F374BA = {
@@ -485,7 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2703DB525FB8E9D00F374BA /* BraveryOfQwanoesTests.swift in Sources */,
+				7788F0A22600E84F00E0A76A /* HIstoryDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +692,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = BraveryOfQwanoesTests/Info.plist;
@@ -702,6 +704,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andersonalencar.BraveryOfQwanoesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BraveryOfQwanoes.app/BraveryOfQwanoes";
@@ -713,6 +716,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = BraveryOfQwanoesTests/Info.plist;
