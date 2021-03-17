@@ -10,4 +10,14 @@ import GameplayKit
 
 class DialogsComponent: GKComponent {
     
+    var history: History
+    
+    init(jsonName: String) {
+        self.history = HistoryData(named: jsonName).getHistoryAndPuzzleData()!
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
