@@ -39,6 +39,6 @@ class HIstoryDataTests: XCTestCase {
     
     // Help function
     private func historyAndPuzzles() -> [String] {
-        return ["Poucos mundos em todo o universo tem uma beleza tão rara e perigosa quanto a de Encélado, Qwanoes terá que enfrentar um mar de Gelo que nenhum humano jamais ousou alcançar. Mas seu primeiro desafio será muito mais fervente  do que ele poderia imaginar.", "Pressão e Vapor ocultos podem te surpreender, do subterrâneo a superfície imite para sobreviver."]
+        return ["Poucos mundos em todo o universo tem uma beleza tão rara e perigosa quanto a de Encélado, Qwanoes terá que enfrentar um mar de Gelo que nenhum humano jamais ousou alcançar, Mas seu primeiro desafio será muito mais fervente do que ele poderia imaginar...", "Pressão e Vapor ocultos podem te surpreender, do subterrâneo a superfície imite para sobreviver."]
     }
 }
