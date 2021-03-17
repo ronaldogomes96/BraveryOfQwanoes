@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,20 +12,73 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="BraveryOfQwanoes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean_background_clouds" translatesAutoresizingMaskIntoConstraints="NO" id="xK0-cZ-7dp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi5-BA-ji5">
+                                <rect key="frame" x="344" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ddy-Cm-JSR"/>
+                                    <constraint firstAttribute="height" constant="50" id="IGs-nV-OPd"/>
+                                </constraints>
+                                <state key="normal" image="settings"/>
+                                <connections>
+                                    <segue destination="Mbc-KG-PsI" kind="presentation" id="Tdi-re-RGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giy-92-71K">
+                                <rect key="frame" x="117" y="536" width="180" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TOQUE NA TELA PARA COMEÇAR">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="SueEllenFrancisco"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="giy-92-71K" secondAttribute="bottom" constant="140" id="EEF-EW-LZi"/>
+                            <constraint firstItem="giy-92-71K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="HBP-RC-Hgt"/>
+                            <constraint firstItem="giy-92-71K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="536" id="PCI-b2-AIc"/>
+                            <constraint firstItem="giy-92-71K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOl-VZ-Vwu"/>
+                            <constraint firstItem="vi5-BA-ji5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dSg-Lv-uZQ"/>
+                            <constraint firstItem="xK0-cZ-7dp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k26-pu-Z2r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vi5-BA-ji5" secondAttribute="trailing" constant="20" id="nfc-iJ-2Qw"/>
+                            <constraint firstItem="xK0-cZ-7dp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pWz-0W-HX3"/>
+                            <constraint firstAttribute="bottom" secondItem="xK0-cZ-7dp" secondAttribute="bottom" id="tJb-M2-R4Z"/>
+                            <constraint firstAttribute="trailing" secondItem="xK0-cZ-7dp" secondAttribute="trailing" id="yfA-cS-sP7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="configurationButton" destination="vi5-BA-ji5" id="UUW-DW-kcR"/>
+                        <outlet property="startLabel" destination="giy-92-71K" id="OLW-2D-52u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.1304347826087"/>
+        </scene>
+        <!--Configuration-->
+        <scene sceneID="FQj-xw-iDw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Configuration" id="Mbc-KG-PsI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqD-hp-hEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="114"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="ocean_background_clouds" width="375" height="667"/>
+        <image name="settings" width="50" height="50"/>
     </resources>
 </document>

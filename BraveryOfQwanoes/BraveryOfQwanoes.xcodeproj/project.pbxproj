@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
+		77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */; };
 		7788F0692600DF1000E0A76A /* PartOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0682600DF1000E0A76A /* PartOne.json */; };
 		7788F06E2600DF3600E0A76A /* PartTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F06D2600DF3600E0A76A /* PartTwo.json */; };
 		7788F0732600DF6F00E0A76A /* Introduction.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0722600DF6F00E0A76A /* Introduction.json */; };
@@ -31,10 +33,12 @@
 		77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */; };
 		77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8225FBB3D1001B0789 /* DialogsComponent.swift */; };
 		77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8725FBB3EB001B0789 /* SensorialComponent.swift */; };
-		77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C8C25FBB425001B0789 /* ConfigurationController.swift */; };
 		77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9125FBB456001B0789 /* EnceladusScene.swift */; };
 		77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9725FBB50B001B0789 /* EarthSystem.swift */; };
 		77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */; };
+		77BB721A26012DB600847E55 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB721926012DB600847E55 /* Fonts.swift */; };
+		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
+		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
 		E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */; };
 		E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DA125FB8E9B00F374BA /* MenuViewController.swift */; };
@@ -62,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
+		77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SueEllenFrancisco-Regular.ttf"; sourceTree = "<group>"; };
 		7788F0682600DF1000E0A76A /* PartOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartOne.json; sourceTree = "<group>"; };
 		7788F06D2600DF3600E0A76A /* PartTwo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartTwo.json; sourceTree = "<group>"; };
 		7788F0722600DF6F00E0A76A /* Introduction.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Introduction.json; sourceTree = "<group>"; };
@@ -86,10 +93,10 @@
 		77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainAnimatedComponent.swift; sourceTree = "<group>"; };
 		77956C8225FBB3D1001B0789 /* DialogsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponent.swift; sourceTree = "<group>"; };
 		77956C8725FBB3EB001B0789 /* SensorialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorialComponent.swift; sourceTree = "<group>"; };
-		77956C8C25FBB425001B0789 /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		77956C9125FBB456001B0789 /* EnceladusScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusScene.swift; sourceTree = "<group>"; };
 		77956C9725FBB50B001B0789 /* EarthSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthSystem.swift; sourceTree = "<group>"; };
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
+		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		775E0A862600FD5900E32308 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		7788F0632600DD7F00E0A76A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,8 +180,9 @@
 		77956C2225FBA865001B0789 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E2703DA325FB8E9B00F374BA /* Menu.storyboard */,
 				E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */,
+				E2703DA325FB8E9B00F374BA /* Menu.storyboard */,
+				77558CE425FF8E08003A74ED /* Configuration.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,8 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				E2703DA125FB8E9B00F374BA /* MenuViewController.swift */,
+				77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */,
 				77956C4325FBB1A2001B0789 /* GameViewController.swift */,
-				77956C8C25FBB425001B0789 /* ConfigurationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,6 +218,7 @@
 		77956C2925FBA93A001B0789 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				775E0A862600FD5900E32308 /* Fonts */,
 				E2703DA625FB8E9C00F374BA /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -243,6 +260,14 @@
 			path = System;
 			sourceTree = "<group>";
 		};
+		77BB721826012D9B00847E55 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				77BB721926012DB600847E55 /* Fonts.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E2703D9125FB8E9B00F374BA = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +297,7 @@
 				77956C2525FBA886001B0789 /* Entity-Component */,
 				77956C9625FBB484001B0789 /* System */,
 				7788F0632600DD7F00E0A76A /* Model */,
+				77BB721826012D9B00847E55 /* Utils */,
 				77956C2125FBA85C001B0789 /* Shared */,
 				77956C2925FBA93A001B0789 /* Assets */,
 				E2703DAB25FB8E9C00F374BA /* Info.plist */,
@@ -410,6 +436,8 @@
 				7788F0852600DFB900E0A76A /* PartFive.json in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
+				77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */,
+				77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */,
 				7788F0732600DF6F00E0A76A /* Introduction.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,12 +490,13 @@
 				77956C6C25FBB356001B0789 /* PlayerControlComponent.swift in Sources */,
 				77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */,
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
+				77BB721A26012DB600847E55 /* Fonts.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
+				77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */,
 				7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */,
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
-				77956C8D25FBB425001B0789 /* ConfigurationController.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
 				7788F0952600E30200E0A76A /* History.swift in Sources */,
