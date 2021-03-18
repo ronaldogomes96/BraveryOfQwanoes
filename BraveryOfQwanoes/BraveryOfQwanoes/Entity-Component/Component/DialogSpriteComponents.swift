@@ -11,22 +11,19 @@ import GameplayKit
 
 class DialogSpriteComponent: GKComponent {
     
-    var spritesNodes: [SKLabelNode] = [SKLabelNode]()
-    var spritePuzzleNode: SKLabelNode = SKLabelNode()
-    
-    init(listOfDialogs: [String]) {
-        for dialog in listOfDialogs {
-            spritesNodes.append(SKLabelNode(text: "\(dialog)"))
+    var spritesNodes: [SKLabelNode]? {
+        let strings: [String] = (self.entity?.component(ofType: DialogsComponent.self)?.historyInParts())!
+        var spriteNode: [SKLabelNode] = [SKLabelNode]()
+        for dialog in strings {
+            spriteNode.append(SKLabelNode(text: "\(dialog)"))
         }
-        super.init()
+        return spriteNode
     }
-    
-    init(puzzle: String) {
-        spritePuzzleNode = SKLabelNode(text: "\(puzzle)")
-        super.init()
+
+    var spritePuzzleNode: SKLabelNode? {
+        let string = self.entity?.component(ofType: DialogsComponent.self)?.history.puzzle
+        let sprite = SKLabelNode(text: "\(String(describing: string))")
+        return sprite
     }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+
 }
