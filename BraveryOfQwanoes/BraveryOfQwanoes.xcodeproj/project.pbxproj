@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */; };
 		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
 		77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */; };
 		7788F0692600DF1000E0A76A /* PartOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0682600DF1000E0A76A /* PartOne.json */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSpriteComponents.swift; sourceTree = "<group>"; };
 		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SueEllenFrancisco-Regular.ttf"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */,
 				77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */,
 				77956C8225FBB3D1001B0789 /* DialogsComponent.swift */,
+				771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */,
 				77956C8725FBB3EB001B0789 /* SensorialComponent.swift */,
 			);
 			path = Component;
@@ -528,6 +531,7 @@
 				7788F0952600E30200E0A76A /* History.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
 				77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */,
+				771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */,
 				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
 				77956C6725FBB338001B0789 /* SoundComponent.swift in Sources */,
 				77956C5D25FBB297001B0789 /* Toten.swift in Sources */,
@@ -713,7 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -732,7 +736,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

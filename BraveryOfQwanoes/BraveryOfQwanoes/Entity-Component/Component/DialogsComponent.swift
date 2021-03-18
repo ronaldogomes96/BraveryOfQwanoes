@@ -23,7 +23,7 @@ class DialogsComponent: GKComponent {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func historyInParts() -> [String.SubSequence] {
-        return history.history.split(separator: ",")
+    func historyInParts() -> [String] {
+        return history.history.split(separator: ",").map { String($0) }
     }
 }
