@@ -39,6 +39,7 @@
 		77BB721A26012DB600847E55 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB721926012DB600847E55 /* Fonts.swift */; };
 		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
+		E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
 		E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */; };
 		E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DA125FB8E9B00F374BA /* MenuViewController.swift */; };
@@ -97,6 +98,7 @@
 		77956C9725FBB50B001B0789 /* EarthSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthSystem.swift; sourceTree = "<group>"; };
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackgroundComponent.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				77956C6625FBB338001B0789 /* SoundComponent.swift */,
 				77956C6B25FBB356001B0789 /* PlayerControlComponent.swift */,
+				E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */,
 				77956C7025FBB370001B0789 /* CharacterBoatAnimatedComponent.swift */,
 				77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */,
 				77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */,
@@ -498,6 +501,7 @@
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
+				E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
 				7788F0952600E30200E0A76A /* History.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
@@ -685,7 +689,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69Y77S7YQP;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -704,7 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69Y77S7YQP;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
