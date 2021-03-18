@@ -15,7 +15,9 @@ class DialogSpriteComponent: GKComponent {
         let strings: [String] = (self.entity?.component(ofType: DialogsComponent.self)?.historyInParts())!
         var spriteNode: [SKLabelNode] = [SKLabelNode]()
         for dialog in strings {
-            spriteNode.append(SKLabelNode(text: "\(dialog)"))
+            let node = SKLabelNode(text: "\(dialog)")
+            node.fontSize = 15
+            spriteNode.append(node)
         }
         return spriteNode
     }
