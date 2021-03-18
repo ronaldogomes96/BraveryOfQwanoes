@@ -26,6 +26,7 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         playSound()
         setConfigView()
+        animateView()
         closeConfigButton.addTarget(self, action: #selector(setConfigView), for: .touchUpInside)
         configurationButton.addTarget(self, action: #selector(setConfigView), for: .touchUpInside)
         configView.layer.cornerRadius = 6
@@ -48,6 +49,14 @@ class MenuViewController: UIViewController {
             controller.modalPresentationStyle = .fullScreen
             self.present(controller, animated: true, completion: nil)
         }
+    }
+    
+    func animateView() {
+        UIView.animateKeyframes(withDuration: 0.8, delay: 0, options: [.autoreverse, .repeat]) { [self] in
+            startLabel.alpha = 0.2
+            startLabel.alpha = 1
+        }
+
     }
     
     @objc func setConfigView() {
