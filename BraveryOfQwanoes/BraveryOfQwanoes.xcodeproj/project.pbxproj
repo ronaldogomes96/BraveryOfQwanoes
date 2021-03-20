@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */; };
 		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
 		77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */; };
 		7788F0692600DF1000E0A76A /* PartOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0682600DF1000E0A76A /* PartOne.json */; };
@@ -36,10 +37,15 @@
 		77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9125FBB456001B0789 /* EnceladusScene.swift */; };
 		77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9725FBB50B001B0789 /* EarthSystem.swift */; };
 		77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */; };
+		7798DE85260238BF00F2913C /* DialogsComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7798DE84260238BF00F2913C /* DialogsComponentTests.swift */; };
 		77BB721A26012DB600847E55 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB721926012DB600847E55 /* Fonts.swift */; };
 		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */; };
+		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
+		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
+		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
+		E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDDA260240D200E5E8B9 /* Colors.swift */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
 		E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */; };
 		E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DA125FB8E9B00F374BA /* MenuViewController.swift */; };
@@ -67,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSpriteComponents.swift; sourceTree = "<group>"; };
 		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SueEllenFrancisco-Regular.ttf"; sourceTree = "<group>"; };
@@ -97,8 +104,13 @@
 		77956C9125FBB456001B0789 /* EnceladusScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusScene.swift; sourceTree = "<group>"; };
 		77956C9725FBB50B001B0789 /* EarthSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthSystem.swift; sourceTree = "<group>"; };
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
+		7798DE84260238BF00F2913C /* DialogsComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponentTests.swift; sourceTree = "<group>"; };
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackgroundComponent.swift; sourceTree = "<group>"; };
+		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
+		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
+		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
+		E256DDDA260240D200E5E8B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +261,7 @@
 				77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */,
 				77956C7A25FBB39D001B0789 /* RainAnimatedComponent.swift */,
 				77956C8225FBB3D1001B0789 /* DialogsComponent.swift */,
+				771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */,
 				77956C8725FBB3EB001B0789 /* SensorialComponent.swift */,
 			);
 			path = Component;
@@ -267,8 +280,19 @@
 			isa = PBXGroup;
 			children = (
 				77BB721926012DB600847E55 /* Fonts.swift */,
+				E256DDDA260240D200E5E8B9 /* Colors.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2176DC4260229AE004ED113 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E2176DC926022D3F004ED113 /* comse2.mp3 */,
+				E2176DCA26022D3F004ED113 /* startMusic.mp3 */,
+				E2176DBF26022935004ED113 /* menuMusic.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		E2703D9125FB8E9B00F374BA = {
@@ -302,6 +326,7 @@
 				7788F0632600DD7F00E0A76A /* Model */,
 				77BB721826012D9B00847E55 /* Utils */,
 				77956C2125FBA85C001B0789 /* Shared */,
+				E2176DC4260229AE004ED113 /* Sounds */,
 				77956C2925FBA93A001B0789 /* Assets */,
 				E2703DAB25FB8E9C00F374BA /* Info.plist */,
 			);
@@ -312,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				7788F0A12600E84F00E0A76A /* HIstoryDataTests.swift */,
+				7798DE84260238BF00F2913C /* DialogsComponentTests.swift */,
 				E2703DB625FB8E9D00F374BA /* Info.plist */,
 			);
 			path = BraveryOfQwanoesTests;
@@ -432,10 +458,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */,
+				E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */,
 				7788F06E2600DF3600E0A76A /* PartTwo.json in Resources */,
 				7788F0692600DF1000E0A76A /* PartOne.json in Resources */,
 				7788F0802600DFA600E0A76A /* PartFour.json in Resources */,
 				7788F07B2600DF9100E0A76A /* PartThree.json in Resources */,
+				E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */,
+				E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */,
 				7788F0852600DFB900E0A76A /* PartFive.json in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
@@ -506,9 +535,11 @@
 				7788F0952600E30200E0A76A /* History.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
 				77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */,
+				771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */,
 				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
 				77956C6725FBB338001B0789 /* SoundComponent.swift in Sources */,
 				77956C5D25FBB297001B0789 /* Toten.swift in Sources */,
+				E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */,
 				77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */,
 				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
@@ -521,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7788F0A22600E84F00E0A76A /* HIstoryDataTests.swift in Sources */,
+				7798DE85260238BF00F2913C /* DialogsComponentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
