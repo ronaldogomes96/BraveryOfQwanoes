@@ -21,6 +21,7 @@ class DialogSpriteComponent: GKComponent {
             node.horizontalAlignmentMode = .center
             node.preferredMaxLayoutWidth = 300
             node.fontName = "SueEllenFrancisco-Regular"
+            node.color = .white
             spriteNode.append(node)
         }
         return spriteNode
@@ -33,6 +34,7 @@ class DialogSpriteComponent: GKComponent {
         sprite.numberOfLines = 0
         sprite.horizontalAlignmentMode = .center
         sprite.preferredMaxLayoutWidth = 200
+        sprite.color = .white
         sprite.fontName = "SueEllenFrancisco-Regular"
         return sprite
     }

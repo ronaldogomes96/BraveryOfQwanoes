@@ -17,40 +17,41 @@ class EarthScene: SKScene {
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-        //self.backgroundColor = .purple
-        self.backgroundColor = .blue
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(swipeGesture))
-        view.addGestureRecognizer(tap)
-        actualDialog()
-        setupDialogNode()
-    }
-    
-    @objc func swipeGesture(_ sender: UITapGestureRecognizer) {
 
+        self.backgroundColor = .blue
+
+        let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
+        view.addGestureRecognizer(userTap)
+
+        setActualDialogNodes()
+        setupDialogNodePosition()
+    }
+
+    @objc func tapGesture(_ sender: UITapGestureRecognizer) {
         switch sender.state {
-        case .ended:
-            dialogNodes.removeFirst()
-            setupDialogNode()
-        default:
-            break
+            case .ended:
+                dialogNodes.removeFirst()
+                setupDialogNodePosition()
+            default:
+                break
         }
     }
 
-    func setupDialogNode() {
+    func setupDialogNodePosition() {
+        //Caso seja o ultimo node, reinicia o dialogo e seu node
         if dialogNodes.isEmpty {
             jsonNames.removeFirst()
             dialog = Dialog(historyPart: jsonNames[0])
-            actualDialog()
+            setActualDialogNodes()
         }
+        
         removeAllChildren()
         let node = dialogNodes[0]
         node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-        node.color = .white
         self.addChild(node)
     }
     
-    func actualDialog() {
+    func setActualDialogNodes() {
         guard let dialogNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritesNodes,
               let puzzleNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritePuzzleNode else {
             fatalError()
