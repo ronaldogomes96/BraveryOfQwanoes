@@ -67,15 +67,10 @@ class EarthScene: SKScene {
             dialog = Dialog(historyPart: jsonNames[0])
             setActualDialogNodes()
         }
-      
-        for node in dialogNodes {
-            node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-            node.color = .white
-            self.addChild(node)
-        }
         
-        removeAllChildren()
+        self.scene?.childNode(withName: "dialog")?.removeFromParent()
         let node = dialogNodes[0]
+        node.name = "dialog"
         node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         self.addChild(node)
     }
