@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    static let SueEllenFranciscoRegularTittle = UIFont(name: "SueEllenFrancisco-Regular", size: 20)
+    static let SueEllenFranciscoRegularTittle = UIFont(name: "SueEllenFrancisco", size: 20)
 }

@@ -11,26 +11,53 @@ import SpriteKit
 
 class EarthScene: SKScene {
     
-    var dialog = Dialog(historyPart: "PartOne")
+    var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
+    var dialog = Dialog(historyPart: "Introduction")
+    var dialogNodes = [SKLabelNode]()
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-        //self.backgroundColor = .purple
-        self.backgroundColor = .black
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(swipeGesture))
-//        view.addGestureRecognizer(tap)
-        setupDialogNode()
+
+        self.backgroundColor = .blue
+
+        let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
+        view.addGestureRecognizer(userTap)
+
+        setActualDialogNodes()
+        setupDialogNodePosition()
     }
 
-    func setupDialogNode() {
-        guard let dialogNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritesNodes else {
+    @objc func tapGesture(_ sender: UITapGestureRecognizer) {
+        dialogNodes.removeFirst()
+        setupDialogNodePosition()
+        
+        // É quando o puzzle esta na tela
+        if dialogNodes.count == 1 {
+            //Realizar o puzzle
+        }
+    }
+
+    func setupDialogNodePosition() {
+        //Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
+        if dialogNodes.isEmpty {
+            jsonNames.removeFirst()
+            dialog = Dialog(historyPart: jsonNames[0])
+            setActualDialogNodes()
+        }
+        
+        removeAllChildren()
+        let node = dialogNodes[0]
+        node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        self.addChild(node)
+    }
+    
+    func setActualDialogNodes() {
+        guard let dialogNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritesNodes,
+              let puzzleNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritePuzzleNode else {
             fatalError()
         }
         
-        for node in dialogNodes {
-            node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-            node.color = .white
-            self.addChild(node)
-        }
+        self.dialogNodes = dialogNodes
+        self.dialogNodes.append(puzzleNodes)
     }
 }
