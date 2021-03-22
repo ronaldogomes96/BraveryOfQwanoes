@@ -11,7 +11,7 @@ import SpriteKit
 
 class EarthScene: SKScene {
     lazy var velocity: Double = {
-        return 100.0
+        return 50.0
     }()
    
     var background = Background(name: "rain")
@@ -21,14 +21,13 @@ class EarthScene: SKScene {
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-        self.backgroundColor = .blue
 
         let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(userTap)
 
+        setupNodePosition()
         setActualDialogNodes()
         setupDialogNodePosition()
-        setupNodePosition()
     }
     
     func setupNodePosition() {
@@ -46,7 +45,6 @@ class EarthScene: SKScene {
         
         self.addChild(backgroundComponent)
     }
-    
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
         dialogNodes.removeFirst()
@@ -65,15 +63,10 @@ class EarthScene: SKScene {
             dialog = Dialog(historyPart: jsonNames[0])
             setActualDialogNodes()
         }
-      
-        for node in dialogNodes {
-            node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-            node.color = .white
-            self.addChild(node)
-        }
         
-        removeAllChildren()
+        self.scene?.childNode(withName: "dialog")?.removeFromParent()
         let node = dialogNodes[0]
+        node.name = "dialog"
         node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         self.addChild(node)
     }
