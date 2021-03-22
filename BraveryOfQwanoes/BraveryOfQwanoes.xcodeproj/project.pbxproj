@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */; };
+		774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */; };
 		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
 		77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */; };
 		7788F0692600DF1000E0A76A /* PartOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 7788F0682600DF1000E0A76A /* PartOne.json */; };
@@ -41,11 +42,11 @@
 		77BB721A26012DB600847E55 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB721926012DB600847E55 /* Fonts.swift */; };
 		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
-		E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */; };
 		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
 		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
 		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
 		E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDDA260240D200E5E8B9 /* Colors.swift */; };
+		E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
 		E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */; };
 		E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DA125FB8E9B00F374BA /* MenuViewController.swift */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSpriteComponents.swift; sourceTree = "<group>"; };
+		774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzle.swift; sourceTree = "<group>"; };
 		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SueEllenFrancisco-Regular.ttf"; sourceTree = "<group>"; };
@@ -106,11 +108,11 @@
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
 		7798DE84260238BF00F2913C /* DialogsComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponentTests.swift; sourceTree = "<group>"; };
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackgroundComponent.swift; sourceTree = "<group>"; };
 		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
 		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
 		E256DDDA260240D200E5E8B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackgroundComponent.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2703D9F25FB8E9B00F374BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				77956C5725FBB27F001B0789 /* Rain.swift */,
 				77956C5C25FBB297001B0789 /* Toten.swift */,
 				77956C6125FBB2AB001B0789 /* Dialog.swift */,
+				774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				77956C6C25FBB356001B0789 /* PlayerControlComponent.swift in Sources */,
 				77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */,
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
+				774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */,
 				77BB721A26012DB600847E55 /* Fonts.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
