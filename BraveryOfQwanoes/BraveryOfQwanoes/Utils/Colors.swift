@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 extension UIColor {
     static let backgroundBlue = UIColor(red: 0.01, green: 0.16, blue: 0.35, alpha: 1.00)
     static let switchOnColor = UIColor(red: 0.00, green: 0.70, blue: 1.00, alpha: 1.00)

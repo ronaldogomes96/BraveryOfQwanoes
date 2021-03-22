@@ -28,17 +28,17 @@ class EarthScene: SKScene {
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
-        switch sender.state {
-            case .ended:
-                dialogNodes.removeFirst()
-                setupDialogNodePosition()
-            default:
-                break
+        dialogNodes.removeFirst()
+        setupDialogNodePosition()
+        
+        // É quando o puzzle esta na tela
+        if dialogNodes.count == 1 {
+            //Realizar o puzzle
         }
     }
 
     func setupDialogNodePosition() {
-        //Caso seja o ultimo node, reinicia o dialogo e seu node
+        //Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
         if dialogNodes.isEmpty {
             jsonNames.removeFirst()
             dialog = Dialog(historyPart: jsonNames[0])
