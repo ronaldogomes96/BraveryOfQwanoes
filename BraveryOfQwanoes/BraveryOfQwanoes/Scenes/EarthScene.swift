@@ -15,19 +15,20 @@ class EarthScene: SKScene {
     }()
    
     var background = Background(name: "rain")
-    var dialog = Dialog(historyPart: "PartOne")
+    var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
+    var dialog = Dialog(historyPart: "Introduction")
+    var dialogNodes = [SKLabelNode]()
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-        self.backgroundColor = .blue
+        //self.backgroundColor = .blue
 
         let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(userTap)
 
+        setupNodePosition()
         setActualDialogNodes()
         setupDialogNodePosition()
-        setupNodePosition()
-        setupDialogNode()
     }
     
     func setupNodePosition() {
@@ -48,9 +49,6 @@ class EarthScene: SKScene {
         
         self.addChild(backgroundComponent)
     }
-    var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
-    var dialog = Dialog(historyPart: "Introduction")
-    var dialogNodes = [SKLabelNode]()
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
         dialogNodes.removeFirst()
