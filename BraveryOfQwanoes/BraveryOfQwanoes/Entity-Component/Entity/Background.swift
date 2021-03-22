@@ -10,4 +10,12 @@ import GameplayKit
 
 class Background: GKEntity {
     
+    init(name: String) {
+        super.init()
+        self.addComponent(DynamicBackgroundComponent(backgroundName: name))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
