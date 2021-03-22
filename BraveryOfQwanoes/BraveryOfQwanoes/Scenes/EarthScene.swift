@@ -39,11 +39,10 @@ class EarthScene: SKScene {
         //backgroundComponent.scale(to: CGSize(width: self.size.width, height: self.size.height))
         backgroundComponent.position = CGPoint(x: backgroundComponent.size.width/2, y: self.frame.midY)
     
-        
         let duration = Double(backgroundComponent.size.width/2)/velocity // tem haver com física tempo = espaço/velocidade
         let moveFloorAction = SKAction.moveBy(x: -backgroundComponent.size.width/2, y: 0, duration: duration)
         let resetXAction = SKAction.moveBy(x: backgroundComponent.size.width/2, y: 0, duration: 0)
-        let sequenceActions = SKAction.sequence([moveFloorAction,resetXAction])
+        let sequenceActions = SKAction.sequence([moveFloorAction, resetXAction])
         let repeatAction = SKAction.repeatForever(sequenceActions)
         backgroundComponent.run(repeatAction)
         
