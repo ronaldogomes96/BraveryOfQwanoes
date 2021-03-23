@@ -10,4 +10,12 @@ import GameplayKit
 
 class CharacterBoat: GKEntity {
     
+    init(characterName: String) {
+        super.init()
+        self.addComponent(PlayerControlComponent(characterName: characterName))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

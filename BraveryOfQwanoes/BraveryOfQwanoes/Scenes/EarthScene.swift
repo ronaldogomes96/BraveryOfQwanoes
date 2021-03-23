@@ -15,6 +15,7 @@ class EarthScene: SKScene {
     }()
    
     var background = Background(name: "rain")
+    var character = CharacterBoat(characterName: "qwanoes_happy")
     var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "Introduction")
     var dialogNodes = [SKLabelNode]()
@@ -28,6 +29,7 @@ class EarthScene: SKScene {
         setupNodePosition()
         setActualDialogNodes()
         setupDialogNodePosition()
+        setUpCharacter()
     }
     
     func setupNodePosition() {
@@ -44,6 +46,22 @@ class EarthScene: SKScene {
         backgroundComponent.run(repeatAction)
         
         self.addChild(backgroundComponent)
+    }
+    
+    func setUpCharacter() {
+        guard let characterComponent = character.component(ofType: PlayerControlComponent.self)?.playerNode else {return}
+        characterComponent.size.width = 280
+        characterComponent.size.height = 280
+        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4) //characterComponent.size.height/2
+        
+        let duration = 2
+        let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
+        let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
+        let sequence = SKAction.sequence([rotateX,rotateY])
+        let repeatAction = SKAction.repeatForever(sequence)
+        
+        characterComponent.run(repeatAction)
+        self.addChild(characterComponent)
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
