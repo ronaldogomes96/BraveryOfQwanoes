@@ -10,14 +10,19 @@ import GameplayKit
 import SpriteKit
 
 class EarthScene: SKScene {
+
     lazy var velocity: Double = {
         return 50.0
     }()
-   
     var background = Background(name: "rain")
     var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "Introduction")
     var dialogNodes = [SKLabelNode]()
+    var firstPuzzle = FirstPuzzle()
+    
+    var puzzleOnScreen: Bool {
+        dialogNodes.count == 1
+    }
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -39,7 +44,7 @@ class EarthScene: SKScene {
         let duration = Double(backgroundComponent.size.width/2)/velocity // tem haver com física tempo = espaço/velocidade
         let moveFloorAction = SKAction.moveBy(x: -backgroundComponent.size.width/2, y: 0, duration: duration)
         let resetXAction = SKAction.moveBy(x: backgroundComponent.size.width/2, y: 0, duration: 0)
-        let sequenceActions = SKAction.sequence([moveFloorAction,resetXAction])
+        let sequenceActions = SKAction.sequence([moveFloorAction, resetXAction])
         let repeatAction = SKAction.repeatForever(sequenceActions)
         backgroundComponent.run(repeatAction)
         
@@ -47,13 +52,13 @@ class EarthScene: SKScene {
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
-        dialogNodes.removeFirst()
-        setupDialogNodePosition()
         
-        // É quando o puzzle esta na tela
-        if dialogNodes.count == 1 {
-            //Realizar o puzzle
+        // É quando o puzzle não esta na tela
+        if !puzzleOnScreen {
+            dialogNodes.removeFirst()
+            setupDialogNodePosition()
         }
+
     }
 
     func setupDialogNodePosition() {
@@ -79,4 +84,18 @@ class EarthScene: SKScene {
         self.dialogNodes = dialogNodes
         self.dialogNodes.append(puzzleNodes)
     }
+    
+    override func update(_ currentTime: TimeInterval) {
+        if puzzleOnScreen {
+            firstPuzzle.component(ofType: SensorialComponent.self)?.isPuzzle = true
+            if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd {
+               //print("terminou")
+                dialogNodes.removeFirst()
+                setupDialogNodePosition()
+            } else {
+                //print("nao terminou")
+            }
+        }
+    }
+    
 }
