@@ -18,12 +18,20 @@ class SensorialComponent: GKComponent, CLLocationManagerDelegate {
     var isPuzzleEnd = false
     var initialPosiiton: CLLocationDirection?
     
+    override init() {
+        super.init()
+        initialConfigurationForLocationManager()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func initialConfigurationForLocationManager() {
         if CLLocationManager.headingAvailable() {
             locationManager.headingFilter = 1
             locationManager.startUpdatingHeading()
             locationManager.delegate = self
-            isPuzzle = true
         }
     }
     
@@ -31,14 +39,28 @@ class SensorialComponent: GKComponent, CLLocationManagerDelegate {
         if !isPuzzle {
             initialPosiiton = heading.magneticHeading
         }
-        if initialPosiiton ?? heading.magneticHeading >= (heading.magneticHeading + 180) {
-            isleft = true
+        if let initialPosiiton = initialPosiiton {
+            var transformHeading = heading.magneticHeading
+            if initialPosiiton < 45 {
+                transformHeading -= 45
+            }
+            if initialPosiiton > 315 {
+                transformHeading += 45
+            }
+            print("INITIAL POSITION: \(initialPosiiton)")
+            if transformHeading >= (initialPosiiton  + 45) {
+                isleft = true
+            }
+            if transformHeading <= (initialPosiiton - 45) {
+                isright = true
+            }
+            if isleft && isright {
+                isPuzzleEnd = true
+            }
+            print(transformHeading)
         }
-        if initialPosiiton ?? heading.magneticHeading <= (heading.magneticHeading - 180) {
-            isright = true
-        }
-        if isleft && isright {
-            isPuzzleEnd = true
-        }
+        
+        print(heading.magneticHeading)
     }
+    
 }
