@@ -12,7 +12,7 @@ import SpriteKit
 class EarthScene: SKScene {
 
     lazy var velocity: Double = {
-        return 100.0
+        return 50.0
     }()
     var background = Background(name: "rain")
     var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
@@ -26,7 +26,6 @@ class EarthScene: SKScene {
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-        //self.backgroundColor = .blue
 
         let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(userTap)
@@ -38,10 +37,8 @@ class EarthScene: SKScene {
     
     func setupNodePosition() {
         guard let backgroundComponent = background.component(ofType: DynamicBackgroundComponent.self)?.backgroundNode else {return}
-        backgroundComponent.size.width = self.size.width
-        backgroundComponent.size.width = self.size.height
-        //backgroundComponent.size = CGSize(width: (scene?.size.width)!, height: 250)
-        //backgroundComponent.scale(to: CGSize(width: self.size.width, height: self.size.height))
+        backgroundComponent.size.width = self.size.width * 2
+        backgroundComponent.size.height = self.size.height
         backgroundComponent.position = CGPoint(x: backgroundComponent.size.width/2, y: self.frame.midY)
     
         let duration = Double(backgroundComponent.size.width/2)/velocity // tem haver com física tempo = espaço/velocidade

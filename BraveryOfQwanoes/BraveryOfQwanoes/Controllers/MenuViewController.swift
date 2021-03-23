@@ -40,7 +40,7 @@ class MenuViewController: UIViewController {
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(tap)
-        startLabel.titleLabel?.font = .SueEllenFranciscoRegularTittle
+        startLabel.titleLabel?.font = UIFont(name: "SueEllenFrancisco", size: 20)
     }
 
     @objc func tapGesture() {

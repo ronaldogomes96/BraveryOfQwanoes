@@ -28,19 +28,12 @@
                                 </constraints>
                                 <state key="normal" image="settings"/>
                             </button>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giy-92-71K">
-                                <rect key="frame" x="117" y="536" width="180" height="60"/>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="giy-92-71K">
+                                <rect key="frame" x="68.666666666666686" y="571.66666666666663" width="277" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="TOQUE NA TELA PARA COMEÇAR">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="18" name="SueEllenFrancisco"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="TOQUE NA TELA PARA COMEÇAR">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zd-r6-iZc">
@@ -95,12 +88,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="giy-92-71K" secondAttribute="bottom" constant="140" id="EEF-EW-LZi"/>
-                            <constraint firstItem="giy-92-71K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="HBP-RC-Hgt"/>
-                            <constraint firstItem="giy-92-71K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="536" id="PCI-b2-AIc"/>
-                            <constraint firstItem="giy-92-71K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOl-VZ-Vwu"/>
+                            <constraint firstItem="giy-92-71K" firstAttribute="centerX" secondItem="xK0-cZ-7dp" secondAttribute="centerX" id="WGG-II-kXh"/>
+                            <constraint firstItem="giy-92-71K" firstAttribute="width" secondItem="xK0-cZ-7dp" secondAttribute="width" multiplier="0.669082" id="bWu-G4-XpD"/>
                             <constraint firstItem="2zd-r6-iZc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="dJ8-W3-54G"/>
                             <constraint firstItem="vi5-BA-ji5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dSg-Lv-uZQ"/>
+                            <constraint firstItem="giy-92-71K" firstAttribute="centerY" secondItem="xK0-cZ-7dp" secondAttribute="centerY" multiplier="1.6" id="iIe-4B-hF9"/>
                             <constraint firstItem="xK0-cZ-7dp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k26-pu-Z2r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vi5-BA-ji5" secondAttribute="trailing" constant="20" id="nfc-iJ-2Qw"/>
                             <constraint firstItem="xK0-cZ-7dp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pWz-0W-HX3"/>
