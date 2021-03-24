@@ -34,7 +34,7 @@ class EarthScene: SKScene {
         setupNodePosition()
         setActualDialogNodes()
         setupDialogNodePosition()
-        setUpCharacter()
+        setUpCharacter(position: 0.0)
     }
     
     func setupNodePosition() {
@@ -53,20 +53,35 @@ class EarthScene: SKScene {
         self.addChild(backgroundComponent)
     }
     
-    func setUpCharacter() {
+    func setUpCharacter(position: Double) {
+        self.scene?.childNode(withName: "barco")?.removeFromParent()
         guard let characterComponent = character.component(ofType: PlayerControlComponent.self)?.playerNode else {return}
         characterComponent.size.width = 280
         characterComponent.size.height = 280
-        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4) //characterComponent.size.height/2
-        
-        let duration = 2
-        let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
-        let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
-        let sequence = SKAction.sequence([rotateX,rotateY])
-        let repeatAction = SKAction.repeatForever(sequence)
-        
-        characterComponent.run(repeatAction)
-        self.addChild(characterComponent)
+        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4)
+        characterComponent.name = "barco"//characterComponent.size.height/2
+        characterComponent.removeAllActions()
+
+        if puzzleOnScreen {
+//            let rotate = SKAction.rotate(byAngle: CGFloat(position), duration: 0)
+//            //SKAction.rot
+//            let sequence = SKAction.sequence([rotate])
+//            //let repeatAction = SKAction.repeat(sequence, count: <#T##Int#>)
+//            characterComponent.run(sequence)
+//            self.addChild(characterComponent)
+            //let rotate = SKAction.rotate(toAngle: CGFloat(position), duration: 0)
+            characterComponent.zRotation = CGFloat(position)
+            self.addChild(characterComponent)
+        } else {
+            //let duration = 2
+            let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
+            let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
+            let sequence = SKAction.sequence([rotateX,rotateY])
+            let repeatAction = SKAction.repeatForever(sequence)
+            
+            characterComponent.run(repeatAction)
+            self.addChild(characterComponent)
+        }
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
@@ -111,7 +126,8 @@ class EarthScene: SKScene {
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
             } else {
-                //print("nao terminou")
+                let heading = firstPuzzle.component(ofType: SensorialComponent.self)!.position
+                setUpCharacter(position: heading)
             }
         }
     }
