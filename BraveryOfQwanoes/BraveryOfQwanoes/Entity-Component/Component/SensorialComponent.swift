@@ -28,10 +28,10 @@ class SensorialComponent: GKComponent {
     }
     
     func isPuzzleEnd() -> Bool {
-        if position >= (90.0.degreeToRadian()) {
+        if position >= (60.0.degreeToRadian()) {
             isleft = true
         }
-        if position <= (-90.0.degreeToRadian()) {
+        if position <= (-60.0.degreeToRadian()) {
             isright = true
         }
         if isleft && isright {

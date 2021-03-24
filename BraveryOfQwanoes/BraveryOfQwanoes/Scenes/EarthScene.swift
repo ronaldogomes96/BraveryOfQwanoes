@@ -59,24 +59,18 @@ class EarthScene: SKScene {
         characterComponent.size.width = 280
         characterComponent.size.height = 280
         characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4)
-        characterComponent.name = "barco"//characterComponent.size.height/2
+        characterComponent.name = "barco"
         characterComponent.removeAllActions()
 
         if puzzleOnScreen {
-//            let rotate = SKAction.rotate(byAngle: CGFloat(position), duration: 0)
-//            //SKAction.rot
-//            let sequence = SKAction.sequence([rotate])
-//            //let repeatAction = SKAction.repeat(sequence, count: <#T##Int#>)
-//            characterComponent.run(sequence)
-//            self.addChild(characterComponent)
-            //let rotate = SKAction.rotate(toAngle: CGFloat(position), duration: 0)
             characterComponent.zRotation = CGFloat(position)
             self.addChild(characterComponent)
         } else {
             //let duration = 2
+            characterComponent.zRotation = CGFloat(0.0)
             let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
             let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
-            let sequence = SKAction.sequence([rotateX,rotateY])
+            let sequence = SKAction.sequence([rotateX, rotateY])
             let repeatAction = SKAction.repeatForever(sequence)
             
             characterComponent.run(repeatAction)
@@ -121,6 +115,7 @@ class EarthScene: SKScene {
             if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd() {
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
+                setUpCharacter(position: 0.0)
             } else {
                 let position = firstPuzzle.component(ofType: SensorialComponent.self)!.position
                 setUpCharacter(position: position)
