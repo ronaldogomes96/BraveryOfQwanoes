@@ -85,13 +85,11 @@ class EarthScene: SKScene {
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
-        
         // É quando o puzzle não esta na tela
         if !puzzleOnScreen {
             dialogNodes.removeFirst()
             setupDialogNodePosition()
         }
-
     }
 
     func setupDialogNodePosition() {
@@ -120,14 +118,12 @@ class EarthScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         if puzzleOnScreen {
-            firstPuzzle.component(ofType: SensorialComponent.self)?.isPuzzle = true
-            if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd {
-               //print("terminou")
+            if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd() {
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
             } else {
-                let heading = firstPuzzle.component(ofType: SensorialComponent.self)!.position
-                setUpCharacter(position: heading)
+                let position = firstPuzzle.component(ofType: SensorialComponent.self)!.position
+                setUpCharacter(position: position)
             }
         }
     }
