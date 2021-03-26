@@ -37,6 +37,17 @@ class EarthScene: SKScene {
         setUpCharacter()
     }
     
+    func pause() {
+        let labelPause = SKLabelNode(text: "Deslize para cima para sair ou deslize para direita para continuar")
+        labelPause.numberOfLines = 0
+        labelPause.fontColor = .purple
+        labelPause.fontSize = 18
+        labelPause.fontName = "SueEllenFrancisco"
+        labelPause.horizontalAlignmentMode = .center
+        labelPause.preferredMaxLayoutWidth = 300
+        labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/4)
+        self.addChild(labelPause)
+    }
     func setupNodePosition() {
         guard let backgroundComponent = background.component(ofType: DynamicBackgroundComponent.self)?.backgroundNode else {return}
         backgroundComponent.size.width = self.size.width * 2

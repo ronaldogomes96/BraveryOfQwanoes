@@ -54,6 +54,7 @@
 		E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA625FB8E9C00F374BA /* Assets.xcassets */; };
 		E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */; };
 		E2703DC025FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */; };
+		E2C83574260B689500A765B0 /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C83573260B689500A765B0 /* PauseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		E2703DBB25FB8E9D00F374BA /* BraveryOfQwanoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesUITests.swift; sourceTree = "<group>"; };
 		E2703DC125FB8E9D00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C83573260B689500A765B0 /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				E2703DA125FB8E9B00F374BA /* MenuViewController.swift */,
 				77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */,
 				77956C4325FBB1A2001B0789 /* GameViewController.swift */,
+				E2C83573260B689500A765B0 /* PauseView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */,
 				77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */,
 				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
+				E2C83574260B689500A765B0 /* PauseView.swift in Sources */,
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
 				77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */,
 			);
