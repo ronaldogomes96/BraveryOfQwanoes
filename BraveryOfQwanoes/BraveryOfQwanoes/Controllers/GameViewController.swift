@@ -26,10 +26,19 @@ class GameViewController: UIViewController {
         configLongPress()
     }
     
-    @objc func longPressActivated() {
-        if #available(iOS 10.0, *) {
-            UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
-           }
+    @objc func longPressActivated(sender: UILongPressGestureRecognizer) {
+        guard sender.state == .began else { return }
+        for vibration in 0...10 {
+            if vibration % 2 == 0 {
+                if #available(iOS 10.0, *) {
+                    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                   }
+            } else {
+                if #available(iOS 10.0, *) {
+                    UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                   }
+            }
+        }
         skView.scene?.isPaused = true
         if let teste = skView.scene as? EarthScene {
             teste.pause()
@@ -40,7 +49,7 @@ class GameViewController: UIViewController {
     
     func configLongPress() {
         let longgesture = UILongPressGestureRecognizer(target: self, action: #selector(longPressActivated))
-        longgesture.minimumPressDuration = 2
+        longgesture.minimumPressDuration = 1.2
         self.view.addGestureRecognizer(longgesture)
     }
     
@@ -58,9 +67,14 @@ class GameViewController: UIViewController {
     @objc func responseToGestureSwipe(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
 
+            print(swipeGesture.state)
+            
                 switch swipeGesture.direction {
                     case .right:
                         self.skView.scene?.isPaused = false
+                        if let scene = self.skView.scene as? EarthScene {
+                            scene.deleteNode(withName: "PauseNode")
+                        }
                         removeGestures()
                     case .up:
                         removeGestures()
