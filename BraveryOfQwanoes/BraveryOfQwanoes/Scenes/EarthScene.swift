@@ -16,7 +16,6 @@ class EarthScene: SKScene {
     }()
     var background = Background(name: "rain")
     var character = CharacterBoat(characterName: "qwanoes_happy")
-    var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "Introduction")
     var dialogNodes = [SKLabelNode]()
     var firstPuzzle = FirstPuzzle()
@@ -88,13 +87,6 @@ class EarthScene: SKScene {
     }
 
     func setupDialogNodePosition() {
-        //Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
-        if dialogNodes.isEmpty {
-            jsonNames.removeFirst()
-            dialog = Dialog(historyPart: jsonNames[0])
-            setActualDialogNodes()
-        }
-        
         self.scene?.childNode(withName: "dialog")?.removeFromParent()
         let node = dialogNodes[0]
         node.name = "dialog"
@@ -114,9 +106,8 @@ class EarthScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         if puzzleOnScreen {
             if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd() {
-                dialogNodes.removeFirst()
-                setupDialogNodePosition()
-                setUpCharacter(position: 0.0)
+                let enceladusScene = EnceladusScene()
+                self.view?.presentScene(enceladusScene)
             } else {
                 let position = firstPuzzle.component(ofType: SensorialComponent.self)!.position
                 //Não deixa o barco virar
