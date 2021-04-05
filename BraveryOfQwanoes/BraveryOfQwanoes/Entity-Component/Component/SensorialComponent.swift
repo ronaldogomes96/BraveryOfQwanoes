@@ -7,7 +7,7 @@
 
 import Foundation
 import GameplayKit
-import CoreLocation
+//import CoreLocation
 import CoreMotion
 
 class SensorialComponent: GKComponent {
@@ -28,10 +28,10 @@ class SensorialComponent: GKComponent {
     }
     
     func isPuzzleEnd() -> Bool {
-        if position >= (60.0.degreeToRadian()) {
+        if position >= (120.degreeToRadian()) {
             isleft = true
         }
-        if position <= (-60.0.degreeToRadian()) {
+        if position <= (-120.0.degreeToRadian()) {
             isright = true
         }
         if isleft && isright {
@@ -46,7 +46,10 @@ class SensorialComponent: GKComponent {
             motionManager.startDeviceMotionUpdates()
             motionManager.startDeviceMotionUpdates(to: OperationQueue()) { [weak self] (motion, error) -> Void in
                 if let iphoneMotion = motion?.rotationRate.z {
-                    self?.position = Double(iphoneMotion)
+                    if iphoneMotion > 0.1 || iphoneMotion < -0.1 {
+                        self?.position += ( Double(iphoneMotion) / 2 )
+                    }
+                    
                 }
             }
         }

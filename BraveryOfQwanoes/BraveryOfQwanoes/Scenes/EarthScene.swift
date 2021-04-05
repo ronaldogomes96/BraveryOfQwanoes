@@ -61,9 +61,9 @@ class EarthScene: SKScene {
         characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4)
         characterComponent.name = "barco"
         characterComponent.removeAllActions()
-
+        
         if puzzleOnScreen {
-            characterComponent.zRotation = CGFloat(position)
+            characterComponent.zRotation = CGFloat(-position)
             self.addChild(characterComponent)
         } else {
             //let duration = 2
@@ -76,6 +76,7 @@ class EarthScene: SKScene {
             characterComponent.run(repeatAction)
             self.addChild(characterComponent)
         }
+        print(position)
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
@@ -118,7 +119,10 @@ class EarthScene: SKScene {
                 setUpCharacter(position: 0.0)
             } else {
                 let position = firstPuzzle.component(ofType: SensorialComponent.self)!.position
-                setUpCharacter(position: position)
+                //Não deixa o barco virar
+                if position < 1.5 && position > -1.5 {
+                    setUpCharacter(position: position)
+                }
             }
         }
     }

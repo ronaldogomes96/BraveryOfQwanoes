@@ -9,6 +9,6 @@ import Foundation
 
 extension Double {
     func degreeToRadian() -> Double {
-        return self * .pi / 180
+        return (self * .pi) / 180
     }
 }
