@@ -125,7 +125,8 @@ class EarthScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         if puzzleOnScreen {
             if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd() {
-                let enceladusScene = EnceladusScene()
+                let enceladusScene = EnceladusScene(size: UIScreen.main.bounds.size)
+                enceladusScene.scaleMode = .aspectFill
                 self.view?.presentScene(enceladusScene)
             } else {
                 let position = firstPuzzle.component(ofType: SensorialComponent.self)!.position
