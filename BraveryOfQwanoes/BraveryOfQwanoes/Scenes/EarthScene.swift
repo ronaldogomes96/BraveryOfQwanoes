@@ -16,7 +16,6 @@ class EarthScene: SKScene {
     }()
     var background = Background(name: "rain")
     var character = CharacterBoat(characterName: "qwanoes_happy")
-    var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "Introduction")
     var dialogNodes = [SKLabelNode]()
     var firstPuzzle = FirstPuzzle()
@@ -34,7 +33,7 @@ class EarthScene: SKScene {
         setupNodePosition()
         setActualDialogNodes()
         setupDialogNodePosition()
-        setUpCharacter()
+        setUpCharacter(position: 0.0)
     }
     
     func pause() {
@@ -72,38 +71,41 @@ class EarthScene: SKScene {
         self.addChild(backgroundComponent)
     }
     
-    func setUpCharacter() {
+    func setUpCharacter(position: Double) {
+        self.scene?.childNode(withName: "barco")?.removeFromParent()
         guard let characterComponent = character.component(ofType: PlayerControlComponent.self)?.playerNode else {return}
         characterComponent.size.width = 280
         characterComponent.size.height = 280
-        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4) // characterComponent.size.height/2
-        let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
-        let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
-        let sequence = SKAction.sequence([rotateX, rotateY])
-        let repeatAction = SKAction.repeatForever(sequence)
+        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4)
+        characterComponent.name = "barco"
+        characterComponent.removeAllActions()
         
-        characterComponent.run(repeatAction)
-        self.addChild(characterComponent)
+        if puzzleOnScreen {
+            characterComponent.zRotation = CGFloat(-position)
+            self.addChild(characterComponent)
+        } else {
+            //let duration = 2
+            characterComponent.zRotation = CGFloat(0.0)
+            let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
+            let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
+            let sequence = SKAction.sequence([rotateX, rotateY])
+            let repeatAction = SKAction.repeatForever(sequence)
+            
+            characterComponent.run(repeatAction)
+            self.addChild(characterComponent)
+        }
+        print(position)
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
-        
         // É quando o puzzle não esta na tela
         if !puzzleOnScreen {
             dialogNodes.removeFirst()
             setupDialogNodePosition()
         }
-
     }
 
     func setupDialogNodePosition() {
-        // Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
-        if dialogNodes.isEmpty {
-            jsonNames.removeFirst()
-            dialog = Dialog(historyPart: jsonNames[0])
-            setActualDialogNodes()
-        }
-        
         self.scene?.childNode(withName: "dialog")?.removeFromParent()
         let node = dialogNodes[0]
         node.name = "dialog"
@@ -122,13 +124,15 @@ class EarthScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         if puzzleOnScreen {
-            firstPuzzle.component(ofType: SensorialComponent.self)?.isPuzzle = true
-            if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd {
-               //p rint("terminou")
-                dialogNodes.removeFirst()
-                setupDialogNodePosition()
+            if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd() {
+                let enceladusScene = EnceladusScene()
+                self.view?.presentScene(enceladusScene)
             } else {
-                // print("nao terminou")
+                let position = firstPuzzle.component(ofType: SensorialComponent.self)!.position
+                //Não deixa o barco virar
+                if position < 1.5 && position > -1.5 {
+                    setUpCharacter(position: position)
+                }
             }
         }
     }
