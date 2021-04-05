@@ -82,6 +82,9 @@
                                 </constraints>
                                 <state key="normal" image="close"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z7z-Ln-ylW">
+                                <rect key="frame" x="69" y="348" width="276" height="40"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,9 +97,13 @@
                             <constraint firstItem="O4l-gK-nWp" firstAttribute="leading" secondItem="2zd-r6-iZc" secondAttribute="trailing" constant="-17" identifier="MenuController" id="ftE-9d-wC3"/>
                             <constraint firstItem="giy-92-71K" firstAttribute="centerY" secondItem="xK0-cZ-7dp" secondAttribute="centerY" multiplier="1.6" id="iIe-4B-hF9"/>
                             <constraint firstItem="xK0-cZ-7dp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k26-pu-Z2r"/>
+                            <constraint firstItem="Z7z-Ln-ylW" firstAttribute="centerX" secondItem="xK0-cZ-7dp" secondAttribute="centerX" id="mGM-Ak-z08"/>
+                            <constraint firstItem="Z7z-Ln-ylW" firstAttribute="centerY" secondItem="xK0-cZ-7dp" secondAttribute="centerY" id="mGf-zY-qvs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vi5-BA-ji5" secondAttribute="trailing" constant="20" id="nfc-iJ-2Qw"/>
+                            <constraint firstItem="Z7z-Ln-ylW" firstAttribute="height" secondItem="xK0-cZ-7dp" secondAttribute="height" multiplier="0.0543478" id="nvy-fI-ndm"/>
                             <constraint firstItem="xK0-cZ-7dp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pWz-0W-HX3"/>
                             <constraint firstAttribute="bottom" secondItem="xK0-cZ-7dp" secondAttribute="bottom" id="tJb-M2-R4Z"/>
+                            <constraint firstItem="Z7z-Ln-ylW" firstAttribute="width" secondItem="xK0-cZ-7dp" secondAttribute="width" multiplier="0.666667" id="vaT-Gx-1JV"/>
                             <constraint firstItem="2zd-r6-iZc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJI-M5-48G"/>
                             <constraint firstAttribute="trailing" secondItem="xK0-cZ-7dp" secondAttribute="trailing" id="yfA-cS-sP7"/>
                         </constraints>
@@ -127,6 +134,7 @@
     </scenes>
     <resources>
         <image name="close" width="50" height="50"/>
+        <image name="logo" width="278" height="40"/>
         <image name="ocean_background_clouds" width="375" height="667"/>
         <image name="settings" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
