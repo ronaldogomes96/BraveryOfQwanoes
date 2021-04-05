@@ -43,6 +43,7 @@
 		77BB721A26012DB600847E55 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB721926012DB600847E55 /* Fonts.swift */; };
 		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
+		E20C3C72261B570700FCD2B2 /* PauseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C3C71261B570700FCD2B2 /* PauseInterface.swift */; };
 		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
 		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
 		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
@@ -111,6 +112,7 @@
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
 		7798DE84260238BF00F2913C /* DialogsComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponentTests.swift; sourceTree = "<group>"; };
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E20C3C71261B570700FCD2B2 /* PauseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseInterface.swift; sourceTree = "<group>"; };
 		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
 		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				77BB721926012DB600847E55 /* Fonts.swift */,
 				E256DDDA260240D200E5E8B9 /* Colors.swift */,
 				774A3E23260A2AA100DD2157 /* DoubleExtension.swift */,
+				E20C3C71261B570700FCD2B2 /* PauseInterface.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
 				E2C83574260B689500A765B0 /* PauseView.swift in Sources */,
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
+				E20C3C72261B570700FCD2B2 /* PauseInterface.swift in Sources */,
 				77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
