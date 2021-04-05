@@ -11,7 +11,7 @@ import SpriteKit
 
 class EnceladusScene: SKScene {
     
-    let background = Background(name: "encelado_background")
+    let background = Background(name: "background_encelado")
     let character = CharacterBoat(characterName: "qwanoes_happy")
     var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "PartOne")

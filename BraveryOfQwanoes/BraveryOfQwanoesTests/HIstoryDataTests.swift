@@ -12,14 +12,14 @@ class HIstoryDataTests: XCTestCase {
 
     func test_getHistoryAndPuzzleData_PartOne_returnsHistoryAndPuzzlesStrings() {
         
-        //Given
+        // Given
         let sut = HistoryData(named: "PartOne")
         
-        //When
+        // When
         let historyAndPuzzle = sut.getHistoryAndPuzzleData()
         let answer = historyAndPuzzles()
         
-        //Then
+        // Then
         XCTAssertEqual(historyAndPuzzle?.history, answer[0])
         XCTAssertEqual(historyAndPuzzle?.puzzle, answer[1])
         
@@ -27,13 +27,13 @@ class HIstoryDataTests: XCTestCase {
     
     func test_getHistoryAndPuzzleData_InvalidName_returnsNil() {
         
-        //Given
+        // Given
         let sut = HistoryData(named: "InvalidName")
         
-        //When
+        // When
         let historyAndPuzzle = sut.getHistoryAndPuzzleData()
         
-        //Then
+        // Then
         XCTAssertNil(historyAndPuzzle)
     }
     

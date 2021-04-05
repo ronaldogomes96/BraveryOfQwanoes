@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */; };
+		774A3E24260A2AA100DD2157 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A3E23260A2AA100DD2157 /* DoubleExtension.swift */; };
 		774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */; };
 		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
 		77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */; };
@@ -54,6 +55,7 @@
 		E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA625FB8E9C00F374BA /* Assets.xcassets */; };
 		E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */; };
 		E2703DC025FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */; };
+		E2C83574260B689500A765B0 /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C83573260B689500A765B0 /* PauseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSpriteComponents.swift; sourceTree = "<group>"; };
+		774A3E23260A2AA100DD2157 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzle.swift; sourceTree = "<group>"; };
 		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		E2703DBB25FB8E9D00F374BA /* BraveryOfQwanoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesUITests.swift; sourceTree = "<group>"; };
 		E2703DC125FB8E9D00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C83573260B689500A765B0 /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,7 @@
 				E2703DA125FB8E9B00F374BA /* MenuViewController.swift */,
 				77558CEC25FF8EFE003A74ED /* ConfigurationViewController.swift */,
 				77956C4325FBB1A2001B0789 /* GameViewController.swift */,
+				E2C83573260B689500A765B0 /* PauseView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			children = (
 				77BB721926012DB600847E55 /* Fonts.swift */,
 				E256DDDA260240D200E5E8B9 /* Colors.swift */,
+				774A3E23260A2AA100DD2157 /* DoubleExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774A3E24260A2AA100DD2157 /* DoubleExtension.swift in Sources */,
 				77956C6225FBB2AB001B0789 /* Dialog.swift in Sources */,
 				77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */,
 				77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */,
@@ -546,6 +553,7 @@
 				E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */,
 				77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */,
 				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
+				E2C83574260B689500A765B0 /* PauseView.swift in Sources */,
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
 				77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */,
 			);
@@ -764,7 +772,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -788,7 +796,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -809,7 +817,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -829,7 +837,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
