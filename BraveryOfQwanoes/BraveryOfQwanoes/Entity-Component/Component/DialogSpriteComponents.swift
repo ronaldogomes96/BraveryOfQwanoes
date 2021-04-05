@@ -11,6 +11,17 @@ import GameplayKit
 
 class DialogSpriteComponent: GKComponent {
     
+    var spriteColor: UIColor
+    
+    init(color: UIColor) {
+        spriteColor = color
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var spritesNodes: [SKLabelNode]? {
         let strings: [String] = (self.entity?.component(ofType: DialogsComponent.self)?.historyInParts())!
         var spriteNode: [SKLabelNode] = [SKLabelNode]()
@@ -21,8 +32,7 @@ class DialogSpriteComponent: GKComponent {
             node.horizontalAlignmentMode = .center
             node.preferredMaxLayoutWidth = 300
             node.fontName = "SueEllenFrancisco"
-            node.color = .red
-            node.fontColor = UIColor(red: 0.49, green: 0.32, blue: 0.22, alpha: 1.00)
+            node.fontColor = spriteColor
             spriteNode.append(node)
         }
         return spriteNode
@@ -35,7 +45,7 @@ class DialogSpriteComponent: GKComponent {
         sprite.numberOfLines = 0
         sprite.horizontalAlignmentMode = .center
         sprite.preferredMaxLayoutWidth = 200
-        sprite.fontColor = UIColor(red: 0.49, green: 0.32, blue: 0.22, alpha: 1.00)
+        sprite.fontColor = spriteColor
         sprite.fontName = "SueEllenFrancisco"
         return sprite
     }
