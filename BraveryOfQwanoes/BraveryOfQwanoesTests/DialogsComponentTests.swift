@@ -11,35 +11,35 @@ import XCTest
 class DialogsComponentTests: XCTestCase {
 
     func test_DialogsComponentInit_partOne_returnsPuzzle() {
-        //Given
+        // Given
         let sut = DialogsComponent(jsonName: "PartOne")
         
-        //When
+        // When
         let puzzle = sut.history.puzzle
         
-        //Then
+        // Then
         XCTAssertEqual(puzzle, "Pressão e Vapor ocultos podem te surpreender, do subterrâneo a superfície imite para sobreviver.")
     }
     
     func test_DialogsComponentInit_invalidName_returnsEmpty() {
-        //Given
+        // Given
         let sut = DialogsComponent(jsonName: "Invalid")
         
-        //When
+        // When
         let historyEmpty = sut.history.history
         
-        //Then
+        // Then
         XCTAssertEqual(historyEmpty, "")
     }
     
     func test_historyInParts_PartOne_returnsThreeParts() {
-        //Given
+        // Given
         let sut = DialogsComponent(jsonName: "PartOne")
         
-        //When
+        // When
         let history = sut.historyInParts()
         
-        //Then
+        // Then
         XCTAssertEqual(history.count, 3)
     }
 }

@@ -76,12 +76,10 @@ class EarthScene: SKScene {
         guard let characterComponent = character.component(ofType: PlayerControlComponent.self)?.playerNode else {return}
         characterComponent.size.width = 280
         characterComponent.size.height = 280
-        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4) //characterComponent.size.height/2
-        
-        let duration = 2
+        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/4) // characterComponent.size.height/2
         let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
         let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
-        let sequence = SKAction.sequence([rotateX,rotateY])
+        let sequence = SKAction.sequence([rotateX, rotateY])
         let repeatAction = SKAction.repeatForever(sequence)
         
         characterComponent.run(repeatAction)
@@ -99,7 +97,7 @@ class EarthScene: SKScene {
     }
 
     func setupDialogNodePosition() {
-        //Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
+        // Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
         if dialogNodes.isEmpty {
             jsonNames.removeFirst()
             dialog = Dialog(historyPart: jsonNames[0])
@@ -126,11 +124,11 @@ class EarthScene: SKScene {
         if puzzleOnScreen {
             firstPuzzle.component(ofType: SensorialComponent.self)?.isPuzzle = true
             if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd {
-               //print("terminou")
+               //p rint("terminou")
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
             } else {
-                //print("nao terminou")
+                // print("nao terminou")
             }
         }
     }

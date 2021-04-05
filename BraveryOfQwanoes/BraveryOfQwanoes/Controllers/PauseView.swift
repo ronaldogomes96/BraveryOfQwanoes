@@ -38,7 +38,7 @@ class PauseView: UIView {
         NSLayoutConstraint.activate([
             title.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5)
         ])
         
         NSLayoutConstraint.activate([
