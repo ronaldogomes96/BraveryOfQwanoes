@@ -28,10 +28,10 @@ class SensorialComponent: GKComponent {
     }
     
     func isPuzzleEnd() -> Bool {
-        if position >= (120.degreeToRadian()) {
+        if position >= (90.degreeToRadian()) {
             isleft = true
         }
-        if position <= (-120.0.degreeToRadian()) {
+        if position <= (-90.0.degreeToRadian()) {
             isright = true
         }
         if isleft && isright {
@@ -47,7 +47,7 @@ class SensorialComponent: GKComponent {
             motionManager.startDeviceMotionUpdates(to: OperationQueue()) { [weak self] (motion, error) -> Void in
                 if let iphoneMotion = motion?.rotationRate.z {
                     if iphoneMotion > 0.1 || iphoneMotion < -0.1 {
-                        self?.position += ( Double(iphoneMotion) / 2 )
+                        self?.position += ( Double(iphoneMotion) / 7 )
                     }
                     
                 }
