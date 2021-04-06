@@ -40,8 +40,8 @@ class GameViewController: UIViewController {
             }
         }
         skView.scene?.isPaused = true
-        if let teste = skView.scene as? EarthScene {
-            teste.pause()
+        if let scene = skView.scene as? PauseGame {
+            scene.pause()
             swipeConfig()
         }
         
@@ -72,7 +72,7 @@ class GameViewController: UIViewController {
                 switch swipeGesture.direction {
                     case .right:
                         self.skView.scene?.isPaused = false
-                        if let scene = self.skView.scene as? EarthScene {
+                        if let scene = skView.scene as? PauseGame {
                             scene.deleteNode(withName: "PauseNode")
                         }
                         removeGestures()

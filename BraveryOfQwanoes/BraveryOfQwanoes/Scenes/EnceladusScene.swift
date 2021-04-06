@@ -47,3 +47,24 @@ class EnceladusScene: SKScene {
         self.addChild(characterComponent)
     }
 }
+
+extension EnceladusScene: PauseGame {
+    func pause() {
+        let labelPause = SKLabelNode(text: "Deslize para cima para sair ou deslize para direita para continuar")
+        labelPause.name = "PauseNode"
+        labelPause.numberOfLines = 0
+        labelPause.fontColor = .white
+        labelPause.fontSize = 25
+        labelPause.fontName = "SueEllenFrancisco"
+        labelPause.horizontalAlignmentMode = .center
+        labelPause.preferredMaxLayoutWidth = 300
+        labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/4)
+        self.addChild(labelPause)
+    }
+    
+    func deleteNode(withName nameNode: String) {
+        let child = self.scene?.childNode(withName: nameNode)
+        child?.removeFromParent()
+        
+    }
+}
