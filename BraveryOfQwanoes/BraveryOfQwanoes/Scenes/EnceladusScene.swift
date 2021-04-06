@@ -12,6 +12,7 @@ import SpriteKit
 class EnceladusScene: SKScene {
     
     let background = Background(name: "background_encelado")
+    let toten = Toten(totenName: "geiser_enceladus")
     let character = CharacterBoat(characterName: "qwanoes_happy")
     var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "PartOne")
@@ -21,6 +22,7 @@ class EnceladusScene: SKScene {
         super.didMove(to: view)
         setupBackgroundNode()
         setupCharacter()
+        //setupToten()
     }
     
     func setupBackgroundNode() {
@@ -36,7 +38,7 @@ class EnceladusScene: SKScene {
         characterComponent.size.width = 280
         characterComponent.size.height = 280
         
-        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/3, y: self.frame.midY - self.size.height/3.5)
+        characterComponent.position = CGPoint(x: self.frame.midX - characterComponent.size.width/2.5, y: self.frame.midY - self.size.height/3.5)
         
         let rotateX = SKAction.rotate(byAngle: CGFloat(0.2), duration: 1.2)
         let rotateY = SKAction.rotate(byAngle: CGFloat(-0.2), duration: 1.2)
@@ -45,6 +47,14 @@ class EnceladusScene: SKScene {
         
         characterComponent.run(repeatAction)
         self.addChild(characterComponent)
+    }
+    
+    func setupToten() {
+        guard let totenComponent = toten.component(ofType: TotenComponent.self)?.totenNode else {return}
+        totenComponent.size.width = 160
+        totenComponent.size.height = 240
+        totenComponent.position = CGPoint(x: self.size.width/1.2, y: self.frame.midY/2.5)
+        self.addChild(totenComponent)
     }
 }
 
