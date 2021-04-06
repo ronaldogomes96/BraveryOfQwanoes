@@ -7,13 +7,14 @@
 
 import Foundation
 import GameplayKit
+import UIKit
 
 class Dialog: GKEntity {
     
-    init(historyPart: String) {
+    init(historyPart: String, color: UIColor) {
         super.init()
         self.addComponent(DialogsComponent(jsonName: historyPart))
-        self.addComponent(DialogSpriteComponent())
+        self.addComponent(DialogSpriteComponent(color: color))
     }
     
     required init?(coder: NSCoder) {

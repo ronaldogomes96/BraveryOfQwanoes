@@ -14,15 +14,21 @@ class EnceladusScene: SKScene {
     let background = Background(name: "background_encelado")
     let toten = Toten(totenName: "geiser_enceladus")
     let character = CharacterBoat(characterName: "qwanoes_happy")
-    var jsonNames = ["Introduction", "PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
-    var dialog = Dialog(historyPart: "PartOne")
+    var jsonNames = ["PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
+    var dialog = Dialog(historyPart: "PartOne", color: UIColor.white)
     var dialogNodes = [SKLabelNode]()
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
+        
         setupBackgroundNode()
         setupCharacter()
         //setupToten()
+        setActualDialogNodes()
+        setupDialogNodePosition()
+        
+        let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
+        view.addGestureRecognizer(userTap)
     }
     
     func setupBackgroundNode() {
@@ -55,6 +61,35 @@ class EnceladusScene: SKScene {
         totenComponent.size.height = 240
         totenComponent.position = CGPoint(x: self.size.width/1.2, y: self.frame.midY/2.5)
         self.addChild(totenComponent)
+    }
+
+    @objc func tapGesture(_ sender: UITapGestureRecognizer) {
+        dialogNodes.removeFirst()
+        setupDialogNodePosition()
+    }
+    
+    func setupDialogNodePosition() {
+        //Caso seja o ultimo node, reinicia o dialogo e uma nova lista de nodes
+        if dialogNodes.isEmpty {
+            jsonNames.removeFirst()
+            dialog = Dialog(historyPart: jsonNames[0], color: UIColor.white)
+            setActualDialogNodes()
+        }
+        
+        self.scene?.childNode(withName: "dialog")?.removeFromParent()
+        let node = dialogNodes[0]
+        node.name = "dialog"
+        node.position = CGPoint(x: self.frame.midX, y: (self.frame.midY - (self.frame.midY / 4 )))
+        self.addChild(node)
+    }
+    
+    func setActualDialogNodes() {
+        guard let dialogNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritesNodes,
+              let puzzleNodes = dialog.component(ofType: DialogSpriteComponent.self)?.spritePuzzleNode else {
+            fatalError()
+        }
+        self.dialogNodes = dialogNodes
+        self.dialogNodes.append(puzzleNodes)
     }
 }
 
