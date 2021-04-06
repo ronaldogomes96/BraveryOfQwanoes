@@ -1,18 +1,19 @@
 //
-//  Toten.swift
+//  TotenComponent.swift
 //  BraveryOfQwanoes
 //
-//  Created by Ronaldo Gomes on 12/03/21.
+//  Created by Anderson Alencar on 06/04/21.
 //
 
 import Foundation
 import GameplayKit
 
-class Toten: GKEntity {
-    
+class TotenComponent: GKComponent {
+
+    var totenNode: SKSpriteNode
     init(totenName: String) {
+        self.totenNode = SKSpriteNode(imageNamed: totenName)
         super.init()
-        self.addComponent(TotenComponent(totenName: totenName))
     }
     
     required init?(coder: NSCoder) {

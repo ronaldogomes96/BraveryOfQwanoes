@@ -45,6 +45,7 @@
 		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		E20C3C72261B570700FCD2B2 /* PauseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C3C71261B570700FCD2B2 /* PauseInterface.swift */; };
+		E20C3C86261C841200FCD2B2 /* TotenComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C3C85261C841200FCD2B2 /* TotenComponent.swift */; };
 		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
 		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
 		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
@@ -115,6 +116,7 @@
 		7798DE84260238BF00F2913C /* DialogsComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponentTests.swift; sourceTree = "<group>"; };
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E20C3C71261B570700FCD2B2 /* PauseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseInterface.swift; sourceTree = "<group>"; };
+		E20C3C85261C841200FCD2B2 /* TotenComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotenComponent.swift; sourceTree = "<group>"; };
 		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
 		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				77956C6625FBB338001B0789 /* SoundComponent.swift */,
 				77956C6B25FBB356001B0789 /* PlayerControlComponent.swift */,
+				E20C3C85261C841200FCD2B2 /* TotenComponent.swift */,
 				E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */,
 				77956C7025FBB370001B0789 /* CharacterBoatAnimatedComponent.swift */,
 				77956C7525FBB389001B0789 /* SeaAnimatedComponent.swift */,
@@ -542,6 +545,7 @@
 				77BB721A26012DB600847E55 /* Fonts.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
+				E20C3C86261C841200FCD2B2 /* TotenComponent.swift in Sources */,
 				77558CED25FF8EFE003A74ED /* ConfigurationViewController.swift in Sources */,
 				7788F09A2600E39F00E0A76A /* HistoryData.swift in Sources */,
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
@@ -741,7 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69Y77S7YQP;
+				DEVELOPMENT_TEAM = 532FTTAQQY;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -760,7 +764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69Y77S7YQP;
+				DEVELOPMENT_TEAM = 532FTTAQQY;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
