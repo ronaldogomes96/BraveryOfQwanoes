@@ -31,6 +31,7 @@
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="giy-92-71K">
                                 <rect key="frame" x="68.666666666666686" y="571.66666666666663" width="277" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="startLabel"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="TOQUE NA TELA PARA COMEÇAR">
                                     <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
