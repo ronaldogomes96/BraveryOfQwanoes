@@ -16,7 +16,7 @@ class EarthScene: SKScene {
     }()
     var background = Background(name: "rain")
     var character = CharacterBoat(characterName: "qwanoes_happy")
-    var dialog = Dialog(historyPart: "Introduction")
+    var dialog = Dialog(historyPart: "Introduction", color: .dialogColor)
     var dialogNodes = [SKLabelNode]()
     var firstPuzzle = FirstPuzzle()
     
