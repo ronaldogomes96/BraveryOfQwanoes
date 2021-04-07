@@ -79,11 +79,11 @@ class EnceladusScene: SKScene {
     
     @objc func swipeGesture(_ sender: UISwipeGestureRecognizer) {
         switch sender.state {
-        case .ended:
-            self.secondPuzzle.component(ofType: SwipeComponent.self)?.swipeSender(sender)
-            userSwipe?.direction = .up
-        @unknown default:
-            return
+            case .ended:
+                self.secondPuzzle.component(ofType: SwipeComponent.self)?.swipeSender(sender)
+                userSwipe?.direction = .up
+            default:
+                return
         }
     }
     
@@ -115,7 +115,7 @@ class EnceladusScene: SKScene {
         if jsonNames[0] == "PartOne" {
             view?.addGestureRecognizer(userSwipe!)
             if secondPuzzle.component(ofType: SwipeComponent.self)!.isPuzzleEnd {
-                userSwipe = nil
+                view?.removeGestureRecognizer(userSwipe!)
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
             }

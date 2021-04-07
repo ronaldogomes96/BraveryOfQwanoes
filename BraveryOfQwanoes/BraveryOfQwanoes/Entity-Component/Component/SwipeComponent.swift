@@ -17,7 +17,7 @@ class SwipeComponent: GKComponent {
     
     override init() {
         super.init()
-        phoneVibrationsConfiguration()
+        phoneVibrationsSetup()
     }
     
     required init?(coder: NSCoder) {
@@ -25,32 +25,23 @@ class SwipeComponent: GKComponent {
     }
     
     func swipeSender(_ sender: UISwipeGestureRecognizer) {
-        swipeFeedback()
+        try? continuousPlayer?.start(atTime: 0)
+        
         if sender.direction == .up {
             isPuzzleEnd = true
-            print(isPuzzleEnd)
         }
     }
     
-    func swipeFeedback() {
-        try? continuousPlayer?.start(atTime: 0)
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
-            try? self.continuousPlayer?.stop(atTime: .zero)
-        }
-    }
-    
-    func phoneVibrationsConfiguration() {
+    private func phoneVibrationsSetup() {
         let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 1)
         let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.6)
         let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness], relativeTime: 0, duration: 0.5)
         do {
             let pattern = try CHHapticPattern(events: [event], parameters: [])
             continuousPlayer = try engine.makePlayer(with: pattern)
-
             try engine.start()
         } catch {
             print("Haptic Error: \(error.localizedDescription).")
         }
-        
     }
 }
