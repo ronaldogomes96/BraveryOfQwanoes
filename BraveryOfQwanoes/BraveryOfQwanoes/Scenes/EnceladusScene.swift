@@ -79,15 +79,8 @@ class EnceladusScene: SKScene {
     
     @objc func swipeGesture(_ sender: UISwipeGestureRecognizer) {
         switch sender.state {
-//        case .changed:
-//            for _ in 0...1000 {
-//                let generator = UIImpactFeedbackGenerator(style: .heavy)
-//                generator.impactOccurred()
-//            }
         case .ended:
-            UIView.animate(withDuration: 2) {
-                self.secondPuzzle.component(ofType: SwipeComponent.self)?.swipeSender(sender)
-            }
+            self.secondPuzzle.component(ofType: SwipeComponent.self)?.swipeSender(sender)
             userSwipe?.direction = .up
         @unknown default:
             return
