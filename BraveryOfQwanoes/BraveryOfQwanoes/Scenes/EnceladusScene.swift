@@ -17,6 +17,11 @@ class EnceladusScene: SKScene {
     var jsonNames = ["PartOne", "PartTwo", "PartThree", "PartFour", "PartFive"]
     var dialog = Dialog(historyPart: "PartOne", color: UIColor.white)
     var dialogNodes = [SKLabelNode]()
+    var puzzleOnScreen: Bool {
+        dialogNodes.count == 1
+    }
+    var userSwipe: UISwipeGestureRecognizer?
+    var secondPuzzle = SecondPuzzle()
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -29,6 +34,8 @@ class EnceladusScene: SKScene {
         
         let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(userTap)
+        self.userSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeGesture))
+        userSwipe?.direction = .down
     }
     
     func setupBackgroundNode() {
@@ -56,16 +63,33 @@ class EnceladusScene: SKScene {
     }
     
     func setupToten() {
-        guard let totenComponent = toten.component(ofType: TotenComponent.self)?.totenNode else {return}
-        totenComponent.size.width = 160
-        totenComponent.size.height = 240
-        totenComponent.position = CGPoint(x: self.size.width/1.2, y: self.frame.midY/2.5)
-        self.addChild(totenComponent)
+        if (self.scene?.childNode(withName: "Toten")) != nil {
+            
+        } else {
+            guard let totenComponent = toten.component(ofType: TotenComponent.self)?.totenNode else {return}
+            totenComponent.size.width = 160
+            totenComponent.size.height = 240
+            totenComponent.name = "Toten"
+            totenComponent.position = CGPoint(x: self.size.width/1.2, y: self.frame.midY/2.5)
+            self.addChild(totenComponent)
+        }
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
-        dialogNodes.removeFirst()
-        setupDialogNodePosition()
+        if !puzzleOnScreen {
+            dialogNodes.removeFirst()
+            setupDialogNodePosition()
+        }
+    }
+    
+    @objc func swipeGesture(_ sender: UISwipeGestureRecognizer) {
+        switch sender.state {
+            case .ended:
+                self.secondPuzzle.component(ofType: SwipeComponent.self)?.swipeSender(sender)
+                userSwipe?.direction = .up
+            default:
+                return
+        }
     }
     
     func setupDialogNodePosition() {
@@ -90,6 +114,25 @@ class EnceladusScene: SKScene {
         }
         self.dialogNodes = dialogNodes
         self.dialogNodes.append(puzzleNodes)
+    }
+    
+    func puzzlesOrganize() {
+        if jsonNames[0] == "PartOne" {
+            setupToten()
+            view?.addGestureRecognizer(userSwipe!)
+            if secondPuzzle.component(ofType: SwipeComponent.self)!.isPuzzleEnd {
+                view?.removeGestureRecognizer(userSwipe!)
+                dialogNodes.removeFirst()
+                setupDialogNodePosition()
+                self.scene?.childNode(withName: "Toten")?.removeFromParent()
+            }
+        }
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        if puzzleOnScreen {
+            puzzlesOrganize()
+        }
     }
 }
 
