@@ -35,7 +35,7 @@ class SwipeComponent: GKComponent {
     private func phoneVibrationsSetup() {
         let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 1)
         let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.6)
-        let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness], relativeTime: 0, duration: 0.5)
+        let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness], relativeTime: 0, duration: 1.5)
         do {
             let pattern = try CHHapticPattern(events: [event], parameters: [])
             continuousPlayer = try engine.makePlayer(with: pattern)

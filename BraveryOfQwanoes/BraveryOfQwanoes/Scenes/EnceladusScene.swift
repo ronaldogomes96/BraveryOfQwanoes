@@ -63,11 +63,16 @@ class EnceladusScene: SKScene {
     }
     
     func setupToten() {
-        guard let totenComponent = toten.component(ofType: TotenComponent.self)?.totenNode else {return}
-        totenComponent.size.width = 160
-        totenComponent.size.height = 240
-        totenComponent.position = CGPoint(x: self.size.width/1.2, y: self.frame.midY/2.5)
-        self.addChild(totenComponent)
+        if (self.scene?.childNode(withName: "Toten")) != nil {
+            
+        } else {
+            guard let totenComponent = toten.component(ofType: TotenComponent.self)?.totenNode else {return}
+            totenComponent.size.width = 160
+            totenComponent.size.height = 240
+            totenComponent.name = "Toten"
+            totenComponent.position = CGPoint(x: self.size.width/1.2, y: self.frame.midY/2.5)
+            self.addChild(totenComponent)
+        }
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
@@ -113,11 +118,13 @@ class EnceladusScene: SKScene {
     
     func puzzlesOrganize() {
         if jsonNames[0] == "PartOne" {
+            setupToten()
             view?.addGestureRecognizer(userSwipe!)
             if secondPuzzle.component(ofType: SwipeComponent.self)!.isPuzzleEnd {
                 view?.removeGestureRecognizer(userSwipe!)
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
+                self.scene?.childNode(withName: "Toten")?.removeFromParent()
             }
         }
     }
