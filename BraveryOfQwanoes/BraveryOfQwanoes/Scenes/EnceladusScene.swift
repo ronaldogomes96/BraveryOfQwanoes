@@ -23,7 +23,6 @@ class EnceladusScene: SKScene {
         
         setupBackgroundNode()
         setupCharacter()
-        //setupToten()
         setActualDialogNodes()
         setupDialogNodePosition()
         
