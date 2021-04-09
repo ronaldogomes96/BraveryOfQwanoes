@@ -102,7 +102,7 @@ class EnceladusScene: SKScene {
         self.scene?.childNode(withName: "dialog")?.removeFromParent()
         let node = dialogNodes[0]
         node.name = "dialog"
-        node.position = CGPoint(x: self.frame.midX, y: (self.frame.midY - (self.frame.midY / 4 )))
+        node.position = CGPoint(x: self.frame.midX, y: (self.frame.midY - (self.frame.midY / 6 )))
         self.addChild(node)
     }
     
@@ -148,7 +148,7 @@ extension EnceladusScene: PauseGame {
         labelPause.fontName = "SueEllenFrancisco"
         labelPause.horizontalAlignmentMode = .center
         labelPause.preferredMaxLayoutWidth = 300
-        labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/4)
+        labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/2.5)
         self.addChild(labelPause)
     }
     
