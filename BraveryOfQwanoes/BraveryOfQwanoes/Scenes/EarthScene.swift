@@ -80,9 +80,11 @@ class EarthScene: SKScene {
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
         // É quando o puzzle não esta na tela
-        if !puzzleOnScreen {
-            dialogNodes.removeFirst()
-            setupDialogNodePosition()
+        if !isPaused {
+            if !puzzleOnScreen {
+                dialogNodes.removeFirst()
+                setupDialogNodePosition()
+            }
         }
     }
 

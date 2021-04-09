@@ -11,6 +11,7 @@ import SpriteKit
 class GameViewController: UIViewController {
 
     let skView: SKView = SKView()
+    var isPaused: Bool = false
 
     override func loadView() {
         super.loadView()
@@ -27,29 +28,31 @@ class GameViewController: UIViewController {
     }
     
     @objc func longPressActivated(sender: UILongPressGestureRecognizer) {
-        guard sender.state == .began else { return }
-        for vibration in 0...10 {
-            if vibration % 2 == 0 {
-                if #available(iOS 10.0, *) {
-                    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
-                   }
-            } else {
-                if #available(iOS 10.0, *) {
-                    UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
-                   }
+        if !isPaused {
+            guard sender.state == .began else { return }
+            for vibration in 0...10 {
+                if vibration % 2 == 0 {
+                    if #available(iOS 10.0, *) {
+                        UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                       }
+                } else {
+                    if #available(iOS 10.0, *) {
+                        UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                       }
+                }
+            }
+            skView.scene?.isPaused = true
+            self.isPaused = true
+            if let scene = skView.scene as? PauseGame {
+                scene.pause()
+                swipeConfig()
             }
         }
-        skView.scene?.isPaused = true
-        if let scene = skView.scene as? PauseGame {
-            scene.pause()
-            swipeConfig()
-        }
-        
     }
     
     func configLongPress() {
         let longgesture = UILongPressGestureRecognizer(target: self, action: #selector(longPressActivated))
-        longgesture.minimumPressDuration = 1.2
+        longgesture.minimumPressDuration = 0.7
         self.view.addGestureRecognizer(longgesture)
     }
     
@@ -76,9 +79,11 @@ class GameViewController: UIViewController {
                             scene.deleteNode(withName: "PauseNode")
                         }
                         removeGestures()
+                        isPaused = false
                     case .up:
                         removeGestures()
                         restartApplication()
+                        isPaused = false
                     default:
                         break
                 }
