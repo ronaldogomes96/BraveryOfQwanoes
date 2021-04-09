@@ -41,6 +41,8 @@
 		77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9725FBB50B001B0789 /* EarthSystem.swift */; };
 		77956CA025FBB53B001B0789 /* EnceladusSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */; };
 		7798DE85260238BF00F2913C /* DialogsComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7798DE84260238BF00F2913C /* DialogsComponentTests.swift */; };
+		77B9F862261C8D7100139799 /* SwipeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B9F861261C8D7100139799 /* SwipeComponent.swift */; };
+		77B9F86A261C923300139799 /* SecondPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B9F869261C923300139799 /* SecondPuzzle.swift */; };
 		77BB721A26012DB600847E55 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB721926012DB600847E55 /* Fonts.swift */; };
 		77BB721E26012E8B00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
@@ -115,6 +117,8 @@
 		77956C9725FBB50B001B0789 /* EarthSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthSystem.swift; sourceTree = "<group>"; };
 		77956C9F25FBB53B001B0789 /* EnceladusSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnceladusSystem.swift; sourceTree = "<group>"; };
 		7798DE84260238BF00F2913C /* DialogsComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsComponentTests.swift; sourceTree = "<group>"; };
+		77B9F861261C8D7100139799 /* SwipeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeComponent.swift; sourceTree = "<group>"; };
+		77B9F869261C923300139799 /* SecondPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPuzzle.swift; sourceTree = "<group>"; };
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E20C3C71261B570700FCD2B2 /* PauseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseInterface.swift; sourceTree = "<group>"; };
 		E20C3C85261C841200FCD2B2 /* TotenComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotenComponent.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 				77956C5C25FBB297001B0789 /* Toten.swift */,
 				77956C6125FBB2AB001B0789 /* Dialog.swift */,
 				774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */,
+				77B9F869261C923300139799 /* SecondPuzzle.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				77956C8225FBB3D1001B0789 /* DialogsComponent.swift */,
 				771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */,
 				77956C8725FBB3EB001B0789 /* SensorialComponent.swift */,
+				77B9F861261C8D7100139799 /* SwipeComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 				77956C6C25FBB356001B0789 /* PlayerControlComponent.swift in Sources */,
 				77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */,
 				E20C3CE526207B9000FCD2B2 /* EndGameScene.swift in Sources */,
+				77B9F862261C8D7100139799 /* SwipeComponent.swift in Sources */,
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */,
 				77BB721A26012DB600847E55 /* Fonts.swift in Sources */,
@@ -571,6 +578,7 @@
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
 				E20C3C72261B570700FCD2B2 /* PauseInterface.swift in Sources */,
 				77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */,
+				77B9F86A261C923300139799 /* SecondPuzzle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
