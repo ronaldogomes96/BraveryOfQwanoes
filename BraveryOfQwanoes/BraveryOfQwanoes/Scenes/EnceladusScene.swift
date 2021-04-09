@@ -75,9 +75,11 @@ class EnceladusScene: SKScene {
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
-        if !puzzleOnScreen {
-            dialogNodes.removeFirst()
-            setupDialogNodePosition()
+        if !isPaused {
+            if !puzzleOnScreen {
+                dialogNodes.removeFirst()
+                setupDialogNodePosition()
+            }
         }
     }
     
