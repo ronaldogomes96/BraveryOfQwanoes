@@ -48,6 +48,7 @@
 		77BB722226012E8D00847E55 /* SueEllenFrancisco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775E0A7F2600FD1D00E32308 /* SueEllenFrancisco-Regular.ttf */; };
 		E20C3C72261B570700FCD2B2 /* PauseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C3C71261B570700FCD2B2 /* PauseInterface.swift */; };
 		E20C3C86261C841200FCD2B2 /* TotenComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C3C85261C841200FCD2B2 /* TotenComponent.swift */; };
+		E20C3CE526207B9000FCD2B2 /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C3CE426207B9000FCD2B2 /* EndGameScene.swift */; };
 		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
 		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
 		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
@@ -121,6 +122,7 @@
 		77BB721926012DB600847E55 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E20C3C71261B570700FCD2B2 /* PauseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseInterface.swift; sourceTree = "<group>"; };
 		E20C3C85261C841200FCD2B2 /* TotenComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotenComponent.swift; sourceTree = "<group>"; };
+		E20C3CE426207B9000FCD2B2 /* EndGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
 		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
 		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			children = (
 				77956C3E25FBB142001B0789 /* EarthScene.swift */,
 				77956C9125FBB456001B0789 /* EnceladusScene.swift */,
+				E20C3CE426207B9000FCD2B2 /* EndGameScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				77956C9825FBB50B001B0789 /* EarthSystem.swift in Sources */,
 				77956C6C25FBB356001B0789 /* PlayerControlComponent.swift in Sources */,
 				77956C4425FBB1A2001B0789 /* GameViewController.swift in Sources */,
+				E20C3CE526207B9000FCD2B2 /* EndGameScene.swift in Sources */,
 				77B9F862261C8D7100139799 /* SwipeComponent.swift in Sources */,
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */,

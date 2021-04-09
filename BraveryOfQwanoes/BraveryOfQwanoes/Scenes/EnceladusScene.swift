@@ -28,7 +28,6 @@ class EnceladusScene: SKScene {
         
         setupBackgroundNode()
         setupCharacter()
-        //setupToten()
         setActualDialogNodes()
         setupDialogNodePosition()
         
@@ -125,6 +124,9 @@ class EnceladusScene: SKScene {
                 dialogNodes.removeFirst()
                 setupDialogNodePosition()
                 self.scene?.childNode(withName: "Toten")?.removeFromParent()
+                let endGame = EndGameScene(size: UIScreen.main.bounds.size)//EnceladusScene(size: UIScreen.main.bounds.size)
+                endGame.scaleMode = .aspectFill
+                self.view?.presentScene(endGame)
             }
         }
     }
