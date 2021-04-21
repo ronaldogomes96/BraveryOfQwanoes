@@ -13,13 +13,14 @@ class TutorialScene: SKScene {
 
     var background = Background(name: "space_background")
     var character = CharacterBoat(characterName: "qwanoes_thumbsUp")
-    var count = 1
+    var counterMessage = 1
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         setupBackgroundNode()
         setupCharacter()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(nextTutorial))
+        view.addGestureRecognizer(tapGesture)
     }
     
     func setupBackgroundNode() {
@@ -36,15 +37,17 @@ class TutorialScene: SKScene {
         let duration: Double = 1.5
         let moveCharacterUp = SKAction.moveBy(x: 0, y: characterComponent.size.height*1.5, duration: duration)
         characterComponent.run(moveCharacterUp) { [self] in
-            setupBallon(order: count)
+            setupBallon(order: counterMessage)
         }
         self.addChild(characterComponent)
     }
     
     func setupBallon(order: Int) {
-        var talkBallon = TalkBalloon(talkBallonName: "message\(count+3)")
+        let talkBallon = TalkBalloon(talkBallonName: "tutorialMessage\(counterMessage)")
+        counterMessage += 1
         guard let talkComponentBallon = talkBallon.component(ofType: PlayerControlComponent.self)?.playerNode else {return}
         talkComponentBallon.position = CGPoint(x: self.frame.midX, y: self.frame.midY - talkComponentBallon.size.height*0.9)
+        talkComponentBallon.name = "ballon"
         let duration: Double = 1.5
         talkComponentBallon.alpha = 0
         let moveCharacterUp = SKAction.fadeAlpha(to: 1, duration: duration)
@@ -52,12 +55,23 @@ class TutorialScene: SKScene {
         self.addChild(talkComponentBallon)
     }
     
+    func deleteBallon() {
+        let child = self.scene?.childNode(withName: "ballon")
+        let action = SKAction.fadeAlpha(to: 0, duration: 1)
+        child?.run(action, completion: { [self] in
+            child?.removeFromParent()
+            setupBallon(order: counterMessage)
+        })
+    }
+    
     @objc func nextTutorial() {
-        switch count {
-            case 1:
-                <#code#>
+        switch counterMessage {
+            case 2:
+                deleteBallon()
             default:
-                <#code#>
+                let earthScene = EarthScene(size: UIScreen.main.bounds.size)
+                earthScene.scaleMode = .aspectFill
+                self.view?.presentScene(earthScene)
         }
     }
 }
