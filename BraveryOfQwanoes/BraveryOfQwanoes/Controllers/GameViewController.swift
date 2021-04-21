@@ -69,25 +69,22 @@ class GameViewController: UIViewController {
     
     @objc func responseToGestureSwipe(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-
-            print(swipeGesture.state)
-            
-                switch swipeGesture.direction {
-                    case .right:
-                        self.skView.scene?.isPaused = false
-                        if let scene = skView.scene as? PauseGame {
-                            scene.deleteNode(withName: "PauseNode")
-                        }
-                        removeGestures()
-                        isPaused = false
-                    case .up:
-                        removeGestures()
-                        restartApplication()
-                        isPaused = false
-                    default:
-                        break
-                }
+            switch swipeGesture.direction {
+                case .right:
+                    self.skView.scene?.isPaused = false
+                    if let scene = skView.scene as? PauseGame {
+                        scene.deleteNode(withName: "PauseNode")
+                    }
+                    removeGestures()
+                    isPaused = false
+                case .up:
+                    removeGestures()
+                    restartApplication()
+                    isPaused = false
+                default:
+                    break
             }
+        }
     }
     
     func restartApplication () {
@@ -97,9 +94,9 @@ class GameViewController: UIViewController {
         let restartController = menuViewController
 
         guard
-                let window = UIApplication.shared.keyWindow,
-                let rootViewController = window.rootViewController
-                else {
+            let window = UIApplication.shared.keyWindow,
+            let rootViewController = window.rootViewController
+        else {
             return
         }
 
