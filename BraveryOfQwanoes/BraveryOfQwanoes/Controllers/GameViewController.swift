@@ -21,7 +21,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scene: SKScene = EarthScene(size: UIScreen.main.bounds.size)
+        let scene: SKScene = TutorialScene(size: UIScreen.main.bounds.size)//EarthScene(size: UIScreen.main.bounds.size)
         scene.scaleMode = .aspectFill
         self.skView.presentScene(scene)
         configLongPress()
