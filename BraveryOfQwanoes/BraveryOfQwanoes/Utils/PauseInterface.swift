@@ -7,8 +7,8 @@
 
 import Foundation
 
-
 protocol PauseGame {
-    func pause() -> Void
-    func deleteNode(withName nameNode: String) -> Void
+    func pause()
+    func play()
+    func deleteNode(withName nameNode: String)
 }

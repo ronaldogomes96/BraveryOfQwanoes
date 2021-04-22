@@ -19,6 +19,7 @@ class EarthScene: SKScene {
     var dialog = Dialog(historyPart: "Introduction", color: .dialogColor)
     var dialogNodes = [SKLabelNode]()
     var firstPuzzle = FirstPuzzle()
+    var player = SoundComponent(nameSound: "comse2")
     
     var puzzleOnScreen: Bool {
         dialogNodes.count == 1
@@ -34,6 +35,7 @@ class EarthScene: SKScene {
         setActualDialogNodes()
         setupDialogNodePosition()
         setUpCharacter(position: 0.0)
+        player.playSound(volume: 0.3)
     }
     
     func setupNodePosition() {
@@ -75,7 +77,6 @@ class EarthScene: SKScene {
             characterComponent.run(repeatAction)
             self.addChild(characterComponent)
         }
-        print(position)
     }
 
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
@@ -108,7 +109,7 @@ class EarthScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         if puzzleOnScreen {
             if firstPuzzle.component(ofType: SensorialComponent.self)!.isPuzzleEnd() {
-                let enceladusScene = EnceladusScene(size: UIScreen.main.bounds.size)
+                let enceladusScene = CongratulationsScene(size: UIScreen.main.bounds.size)
                 enceladusScene.scaleMode = .aspectFill
                 self.view?.presentScene(enceladusScene)
             } else {
@@ -134,7 +135,12 @@ extension EarthScene: PauseGame {
         labelPause.horizontalAlignmentMode = .center
         labelPause.preferredMaxLayoutWidth = 300
         labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/4)
+        player.stopSound()
         self.addChild(labelPause)
+    }
+    
+    func play() {
+        player.playSound()
     }
     
     func deleteNode(withName nameNode: String) {

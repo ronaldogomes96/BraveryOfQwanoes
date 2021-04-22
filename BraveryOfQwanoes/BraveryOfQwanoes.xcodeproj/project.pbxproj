@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		68D5F36B261B4A7B005B2450 /* InitialScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5F36A261B4A7B005B2450 /* InitialScreenTests.swift */; };
 		771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */; };
+		7721CF17262F083D00FCFF9D /* CongratulationsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF16262F083D00FCFF9D /* CongratulationsScene.swift */; };
+		7721CF1C262F0BF600FCFF9D /* CharacterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF1B262F0BF600FCFF9D /* CharacterComponent.swift */; };
+		7721CF21262F108F00FCFF9D /* BalloonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF20262F108F00FCFF9D /* BalloonComponent.swift */; };
+		7721CF26262F14CD00FCFF9D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF25262F14CD00FCFF9D /* Character.swift */; };
+		7721CF31262F166F00FCFF9D /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF30262F166F00FCFF9D /* Balloon.swift */; };
 		774A3E24260A2AA100DD2157 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A3E23260A2AA100DD2157 /* DoubleExtension.swift */; };
 		774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */; };
 		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
@@ -52,6 +57,7 @@
 		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
 		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
 		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
+		E234C0752630E91B00BF16EC /* tutorialMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E234C0742630E91B00BF16EC /* tutorialMusic.mp3 */; };
 		E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDDA260240D200E5E8B9 /* Colors.swift */; };
 		E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
@@ -61,6 +67,8 @@
 		E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA625FB8E9C00F374BA /* Assets.xcassets */; };
 		E2703DAA25FB8E9C00F374BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2703DA825FB8E9C00F374BA /* LaunchScreen.storyboard */; };
 		E2703DC025FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */; };
+		E2A7301B263045F600F3CDB7 /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7301A263045F600F3CDB7 /* TutorialScene.swift */; };
+		E2A730202630475300F3CDB7 /* TalkBalloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7301F2630475300F3CDB7 /* TalkBalloon.swift */; };
 		E2C83574260B689500A765B0 /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C83573260B689500A765B0 /* PauseView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +92,11 @@
 /* Begin PBXFileReference section */
 		68D5F36A261B4A7B005B2450 /* InitialScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenTests.swift; sourceTree = "<group>"; };
 		771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSpriteComponents.swift; sourceTree = "<group>"; };
+		7721CF16262F083D00FCFF9D /* CongratulationsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsScene.swift; sourceTree = "<group>"; };
+		7721CF1B262F0BF600FCFF9D /* CharacterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterComponent.swift; sourceTree = "<group>"; };
+		7721CF20262F108F00FCFF9D /* BalloonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonComponent.swift; sourceTree = "<group>"; };
+		7721CF25262F14CD00FCFF9D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7721CF30262F166F00FCFF9D /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
 		774A3E23260A2AA100DD2157 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzle.swift; sourceTree = "<group>"; };
 		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
@@ -126,6 +139,7 @@
 		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
 		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
+		E234C0742630E91B00BF16EC /* tutorialMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tutorialMusic.mp3; sourceTree = "<group>"; };
 		E256DDDA260240D200E5E8B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackgroundComponent.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +155,8 @@
 		E2703DBB25FB8E9D00F374BA /* BraveryOfQwanoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveryOfQwanoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2703DBF25FB8E9D00F374BA /* BraveryOfQwanoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveryOfQwanoesUITests.swift; sourceTree = "<group>"; };
 		E2703DC125FB8E9D00F374BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A7301A263045F600F3CDB7 /* TutorialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScene.swift; sourceTree = "<group>"; };
+		E2A7301F2630475300F3CDB7 /* TalkBalloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkBalloon.swift; sourceTree = "<group>"; };
 		E2C83573260B689500A765B0 /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,8 +250,10 @@
 			isa = PBXGroup;
 			children = (
 				77956C3E25FBB142001B0789 /* EarthScene.swift */,
+				E2A7301A263045F600F3CDB7 /* TutorialScene.swift */,
 				77956C9125FBB456001B0789 /* EnceladusScene.swift */,
 				E20C3CE426207B9000FCD2B2 /* EndGameScene.swift */,
+				7721CF16262F083D00FCFF9D /* CongratulationsScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -262,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				77956C4825FBB1D0001B0789 /* CharacterBoat.swift */,
+				E2A7301F2630475300F3CDB7 /* TalkBalloon.swift */,
 				77956C4D25FBB1FE001B0789 /* Sea.swift */,
 				77956C5225FBB265001B0789 /* Background.swift */,
 				77956C5725FBB27F001B0789 /* Rain.swift */,
@@ -269,6 +288,8 @@
 				77956C6125FBB2AB001B0789 /* Dialog.swift */,
 				774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */,
 				77B9F869261C923300139799 /* SecondPuzzle.swift */,
+				7721CF25262F14CD00FCFF9D /* Character.swift */,
+				7721CF30262F166F00FCFF9D /* Balloon.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -287,6 +308,8 @@
 				771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */,
 				77956C8725FBB3EB001B0789 /* SensorialComponent.swift */,
 				77B9F861261C8D7100139799 /* SwipeComponent.swift */,
+				7721CF1B262F0BF600FCFF9D /* CharacterComponent.swift */,
+				7721CF20262F108F00FCFF9D /* BalloonComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -314,6 +337,7 @@
 		E2176DC4260229AE004ED113 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				E234C0742630E91B00BF16EC /* tutorialMusic.mp3 */,
 				E2176DC926022D3F004ED113 /* comse2.mp3 */,
 				E2176DCA26022D3F004ED113 /* startMusic.mp3 */,
 				E2176DBF26022935004ED113 /* menuMusic.mp3 */,
@@ -492,6 +516,7 @@
 				7788F07B2600DF9100E0A76A /* PartThree.json in Resources */,
 				E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */,
 				E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */,
+				E234C0752630E91B00BF16EC /* tutorialMusic.mp3 in Resources */,
 				7788F0852600DFB900E0A76A /* PartFive.json in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,
@@ -553,6 +578,7 @@
 				77B9F862261C8D7100139799 /* SwipeComponent.swift in Sources */,
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */,
+				7721CF26262F14CD00FCFF9D /* Character.swift in Sources */,
 				77BB721A26012DB600847E55 /* Fonts.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
@@ -562,8 +588,11 @@
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
+				7721CF1C262F0BF600FCFF9D /* CharacterComponent.swift in Sources */,
+				7721CF31262F166F00FCFF9D /* Balloon.swift in Sources */,
 				E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
+				E2A7301B263045F600F3CDB7 /* TutorialScene.swift in Sources */,
 				7788F0952600E30200E0A76A /* History.swift in Sources */,
 				E2703DA025FB8E9B00F374BA /* SceneDelegate.swift in Sources */,
 				77956C7125FBB370001B0789 /* CharacterBoatAnimatedComponent.swift in Sources */,
@@ -571,10 +600,13 @@
 				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
 				77956C6725FBB338001B0789 /* SoundComponent.swift in Sources */,
 				77956C5D25FBB297001B0789 /* Toten.swift in Sources */,
+				7721CF17262F083D00FCFF9D /* CongratulationsScene.swift in Sources */,
 				E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */,
 				77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */,
 				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
+				7721CF21262F108F00FCFF9D /* BalloonComponent.swift in Sources */,
 				E2C83574260B689500A765B0 /* PauseView.swift in Sources */,
+				E2A730202630475300F3CDB7 /* TalkBalloon.swift in Sources */,
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
 				E20C3C72261B570700FCD2B2 /* PauseInterface.swift in Sources */,
 				77956C4E25FBB1FE001B0789 /* Sea.swift in Sources */,
@@ -767,7 +799,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andersonalencar.BraveryOfQwanoesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -787,7 +819,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andersonalencar.BraveryOfQwanoesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,25 +1,21 @@
 //
-//  SecondPuzzle.swift
+//  Balloon.swift
 //  BraveryOfQwanoes
 //
-//  Created by Ronaldo Gomes on 06/04/21.
+//  Created by Ronaldo Gomes on 20/04/21.
 //
 
 import Foundation
 import GameplayKit
 
-class SecondPuzzle: GKEntity {
-
-    override init() {
+class Balloon: GKEntity {
+    
+    init(ballonSpriteName: String) {
         super.init()
-        self.addComponent(SwipeComponent())
+        self.addComponent(BalloonComponent(spriteName: ballonSpriteName))
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-
-
-
