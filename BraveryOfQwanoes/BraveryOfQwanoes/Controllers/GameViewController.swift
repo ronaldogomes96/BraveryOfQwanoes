@@ -89,7 +89,6 @@ class GameViewController: UIViewController {
                         break
                 }
             }
-        }
     }
     
     func restartApplication () {
