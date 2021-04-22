@@ -14,11 +14,14 @@ class EndGameScene: SKScene {
     let background = Background(name: "space_background")
     let congratulationsNode = SKLabelNode(text: "Parabéns você concluiu uma jornada que ninguém jamais ousaria fazer !")
     let returnNode = SKLabelNode(text: "Toque na tela para retornar ao menu")
+    var player = SoundComponent(nameSound: "menuMusic")
+
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         setupBackgroundNode()
         setupCongratulations()
         setupReturn()
+        player.playSound(volume: 0.4)
         let userTap = UITapGestureRecognizer(target: self, action: #selector(backToMenu))
         view.addGestureRecognizer(userTap)
     }

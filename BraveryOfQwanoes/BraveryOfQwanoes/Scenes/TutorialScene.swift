@@ -8,17 +8,20 @@
 import Foundation
 import GameplayKit
 import SpriteKit
+import AVFoundation
 
 class TutorialScene: SKScene {
 
     var background = Background(name: "space_background")
     var character = CharacterBoat(characterName: "qwanoes_thumbsUp")
     var counterMessage = 1
-    
+    var player = SoundComponent(nameSound: "tutorialMusic")
+ 
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         setupBackgroundNode()
         setupCharacter()
+        player.playSound(volume: 0.1)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(nextTutorial))
         view.addGestureRecognizer(tapGesture)
     }
@@ -71,6 +74,7 @@ class TutorialScene: SKScene {
             default:
                 let earthScene = EarthScene(size: UIScreen.main.bounds.size)
                 earthScene.scaleMode = .aspectFill
+                player.stopSound()
                 self.view?.presentScene(earthScene)
         }
     }

@@ -19,6 +19,7 @@ class EarthScene: SKScene {
     var dialog = Dialog(historyPart: "Introduction", color: .dialogColor)
     var dialogNodes = [SKLabelNode]()
     var firstPuzzle = FirstPuzzle()
+    var player = SoundComponent(nameSound: "comse2")
     
     var puzzleOnScreen: Bool {
         dialogNodes.count == 1
@@ -34,6 +35,7 @@ class EarthScene: SKScene {
         setActualDialogNodes()
         setupDialogNodePosition()
         setUpCharacter(position: 0.0)
+        player.playSound(volume: 0.3)
     }
     
     func setupNodePosition() {
@@ -134,7 +136,12 @@ extension EarthScene: PauseGame {
         labelPause.horizontalAlignmentMode = .center
         labelPause.preferredMaxLayoutWidth = 300
         labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/4)
+        player.stopSound()
         self.addChild(labelPause)
+    }
+    
+    func play() {
+        player.playSound()
     }
     
     func deleteNode(withName nameNode: String) {

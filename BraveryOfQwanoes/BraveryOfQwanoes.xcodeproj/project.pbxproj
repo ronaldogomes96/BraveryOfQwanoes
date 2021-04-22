@@ -52,6 +52,7 @@
 		E2176DC026022935004ED113 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DBF26022935004ED113 /* menuMusic.mp3 */; };
 		E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DC926022D3F004ED113 /* comse2.mp3 */; };
 		E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2176DCA26022D3F004ED113 /* startMusic.mp3 */; };
+		E234C0752630E91B00BF16EC /* tutorialMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E234C0742630E91B00BF16EC /* tutorialMusic.mp3 */; };
 		E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDDA260240D200E5E8B9 /* Colors.swift */; };
 		E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */; };
 		E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2703D9D25FB8E9B00F374BA /* AppDelegate.swift */; };
@@ -128,6 +129,7 @@
 		E2176DBF26022935004ED113 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 		E2176DC926022D3F004ED113 /* comse2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comse2.mp3; sourceTree = "<group>"; };
 		E2176DCA26022D3F004ED113 /* startMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startMusic.mp3; sourceTree = "<group>"; };
+		E234C0742630E91B00BF16EC /* tutorialMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tutorialMusic.mp3; sourceTree = "<group>"; };
 		E256DDDA260240D200E5E8B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E256DDEE26038F5800E5E8B9 /* DynamicBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackgroundComponent.swift; sourceTree = "<group>"; };
 		E2703D9A25FB8E9B00F374BA /* BraveryOfQwanoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveryOfQwanoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +322,7 @@
 		E2176DC4260229AE004ED113 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				E234C0742630E91B00BF16EC /* tutorialMusic.mp3 */,
 				E2176DC926022D3F004ED113 /* comse2.mp3 */,
 				E2176DCA26022D3F004ED113 /* startMusic.mp3 */,
 				E2176DBF26022935004ED113 /* menuMusic.mp3 */,
@@ -498,6 +501,7 @@
 				7788F07B2600DF9100E0A76A /* PartThree.json in Resources */,
 				E2176DCB26022D3F004ED113 /* comse2.mp3 in Resources */,
 				E2176DCC26022D3F004ED113 /* startMusic.mp3 in Resources */,
+				E234C0752630E91B00BF16EC /* tutorialMusic.mp3 in Resources */,
 				7788F0852600DFB900E0A76A /* PartFive.json in Resources */,
 				E2703DA725FB8E9C00F374BA /* Assets.xcassets in Resources */,
 				E2703DA525FB8E9B00F374BA /* Menu.storyboard in Resources */,

@@ -47,6 +47,7 @@ class MenuViewController: UIViewController {
         if isConfigPresent {
             let controller = GameViewController()
             controller.modalPresentationStyle = .fullScreen
+            controller.menuControllerReference = self
             self.present(controller, animated: true, completion: nil)
         }
     }
@@ -104,6 +105,10 @@ class MenuViewController: UIViewController {
             }
         }
     }
+    
+    func stopSound() {
+        player?.stop()
+    }
 
     func playSound() {
         let soundEnable = UserDefaults.standard.bool(forKey: "Sound")
@@ -130,7 +135,7 @@ class MenuViewController: UIViewController {
                     print(error.localizedDescription)
                 }
         } else {
-            player?.stop()
+            stopSound()
         }
     }
 }
