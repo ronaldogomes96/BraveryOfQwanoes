@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		68D5F36B261B4A7B005B2450 /* InitialScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5F36A261B4A7B005B2450 /* InitialScreenTests.swift */; };
 		771EC2C6260379CB0067C605 /* DialogSpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */; };
+		7721CF17262F083D00FCFF9D /* CongratulationsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF16262F083D00FCFF9D /* CongratulationsScene.swift */; };
+		7721CF1C262F0BF600FCFF9D /* CharacterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF1B262F0BF600FCFF9D /* CharacterComponent.swift */; };
+		7721CF21262F108F00FCFF9D /* BalloonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF20262F108F00FCFF9D /* BalloonComponent.swift */; };
+		7721CF26262F14CD00FCFF9D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF25262F14CD00FCFF9D /* Character.swift */; };
+		7721CF31262F166F00FCFF9D /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721CF30262F166F00FCFF9D /* Balloon.swift */; };
 		774A3E24260A2AA100DD2157 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A3E23260A2AA100DD2157 /* DoubleExtension.swift */; };
 		774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */; };
 		77558CE525FF8E08003A74ED /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77558CE425FF8E08003A74ED /* Configuration.storyboard */; };
@@ -87,6 +92,11 @@
 /* Begin PBXFileReference section */
 		68D5F36A261B4A7B005B2450 /* InitialScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenTests.swift; sourceTree = "<group>"; };
 		771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSpriteComponents.swift; sourceTree = "<group>"; };
+		7721CF16262F083D00FCFF9D /* CongratulationsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsScene.swift; sourceTree = "<group>"; };
+		7721CF1B262F0BF600FCFF9D /* CharacterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterComponent.swift; sourceTree = "<group>"; };
+		7721CF20262F108F00FCFF9D /* BalloonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonComponent.swift; sourceTree = "<group>"; };
+		7721CF25262F14CD00FCFF9D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7721CF30262F166F00FCFF9D /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
 		774A3E23260A2AA100DD2157 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzle.swift; sourceTree = "<group>"; };
 		77558CE425FF8E08003A74ED /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
@@ -243,6 +253,7 @@
 				E2A7301A263045F600F3CDB7 /* TutorialScene.swift */,
 				77956C9125FBB456001B0789 /* EnceladusScene.swift */,
 				E20C3CE426207B9000FCD2B2 /* EndGameScene.swift */,
+				7721CF16262F083D00FCFF9D /* CongratulationsScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -277,6 +288,8 @@
 				77956C6125FBB2AB001B0789 /* Dialog.swift */,
 				774E12D22608E4D600CEFDAE /* FirstPuzzle.swift */,
 				77B9F869261C923300139799 /* SecondPuzzle.swift */,
+				7721CF25262F14CD00FCFF9D /* Character.swift */,
+				7721CF30262F166F00FCFF9D /* Balloon.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -295,6 +308,8 @@
 				771EC2C5260379CB0067C605 /* DialogSpriteComponents.swift */,
 				77956C8725FBB3EB001B0789 /* SensorialComponent.swift */,
 				77B9F861261C8D7100139799 /* SwipeComponent.swift */,
+				7721CF1B262F0BF600FCFF9D /* CharacterComponent.swift */,
+				7721CF20262F108F00FCFF9D /* BalloonComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -563,6 +578,7 @@
 				77B9F862261C8D7100139799 /* SwipeComponent.swift in Sources */,
 				E2703DA225FB8E9B00F374BA /* MenuViewController.swift in Sources */,
 				774E12D32608E4D600CEFDAE /* FirstPuzzle.swift in Sources */,
+				7721CF26262F14CD00FCFF9D /* Character.swift in Sources */,
 				77BB721A26012DB600847E55 /* Fonts.swift in Sources */,
 				77956C8825FBB3EB001B0789 /* SensorialComponent.swift in Sources */,
 				77956C7625FBB389001B0789 /* SeaAnimatedComponent.swift in Sources */,
@@ -572,6 +588,8 @@
 				77956C7B25FBB39D001B0789 /* RainAnimatedComponent.swift in Sources */,
 				77956C3F25FBB142001B0789 /* EarthScene.swift in Sources */,
 				77956C5325FBB265001B0789 /* Background.swift in Sources */,
+				7721CF1C262F0BF600FCFF9D /* CharacterComponent.swift in Sources */,
+				7721CF31262F166F00FCFF9D /* Balloon.swift in Sources */,
 				E256DDEF26038F5800E5E8B9 /* DynamicBackgroundComponent.swift in Sources */,
 				E2703D9E25FB8E9B00F374BA /* AppDelegate.swift in Sources */,
 				E2A7301B263045F600F3CDB7 /* TutorialScene.swift in Sources */,
@@ -582,9 +600,11 @@
 				77956C9225FBB456001B0789 /* EnceladusScene.swift in Sources */,
 				77956C6725FBB338001B0789 /* SoundComponent.swift in Sources */,
 				77956C5D25FBB297001B0789 /* Toten.swift in Sources */,
+				7721CF17262F083D00FCFF9D /* CongratulationsScene.swift in Sources */,
 				E256DDDB260240D200E5E8B9 /* Colors.swift in Sources */,
 				77956C8325FBB3D1001B0789 /* DialogsComponent.swift in Sources */,
 				77956C5825FBB27F001B0789 /* Rain.swift in Sources */,
+				7721CF21262F108F00FCFF9D /* BalloonComponent.swift in Sources */,
 				E2C83574260B689500A765B0 /* PauseView.swift in Sources */,
 				E2A730202630475300F3CDB7 /* TalkBalloon.swift in Sources */,
 				77956C4925FBB1D0001B0789 /* CharacterBoat.swift in Sources */,
@@ -769,7 +789,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 532FTTAQQY;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -778,7 +799,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andersonalencar.BraveryOfQwanoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -788,7 +809,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 532FTTAQQY;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = BraveryOfQwanoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -797,7 +819,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andersonalencar.BraveryOfQwanoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
