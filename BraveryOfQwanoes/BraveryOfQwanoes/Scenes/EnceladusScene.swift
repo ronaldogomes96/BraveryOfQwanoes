@@ -22,6 +22,8 @@ class EnceladusScene: SKScene {
     }
     var userSwipe: UISwipeGestureRecognizer?
     var secondPuzzle = SecondPuzzle()
+    var player = SoundComponent(nameSound: "comse2")
+
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -30,6 +32,7 @@ class EnceladusScene: SKScene {
         setupCharacter()
         setActualDialogNodes()
         setupDialogNodePosition()
+        player.playSound(volume: 0.3)
         
         let userTap = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
         view.addGestureRecognizer(userTap)
@@ -150,8 +153,13 @@ extension EnceladusScene: PauseGame {
         labelPause.fontName = "SueEllenFrancisco"
         labelPause.horizontalAlignmentMode = .center
         labelPause.preferredMaxLayoutWidth = 300
+        player.stopSound()
         labelPause.position = CGPoint(x: self.frame.midX, y: self.frame.midY - self.frame.midY/2.5)
         self.addChild(labelPause)
+    }
+    
+    func play() {
+        player.playSound(volume: 0.3)
     }
     
     func deleteNode(withName nameNode: String) {

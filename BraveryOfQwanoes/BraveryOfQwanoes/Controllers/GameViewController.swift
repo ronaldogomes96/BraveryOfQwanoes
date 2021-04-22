@@ -12,6 +12,8 @@ class GameViewController: UIViewController {
 
     let skView: SKView = SKView()
     var isPaused: Bool = false
+    
+    var menuControllerReference: MenuViewController?
 
     override func loadView() {
         super.loadView()
@@ -21,8 +23,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scene: SKScene = EarthScene(size: UIScreen.main.bounds.size)
+        let scene: SKScene = TutorialScene(size: UIScreen.main.bounds.size)
         scene.scaleMode = .aspectFill
+        menuControllerReference?.stopSound()
         self.skView.presentScene(scene)
         configLongPress()
     }
@@ -68,23 +71,24 @@ class GameViewController: UIViewController {
     }
     
     @objc func responseToGestureSwipe(gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            switch swipeGesture.direction {
-                case .right:
-                    self.skView.scene?.isPaused = false
-                    if let scene = skView.scene as? PauseGame {
-                        scene.deleteNode(withName: "PauseNode")
-                    }
-                    removeGestures()
-                    isPaused = false
-                case .up:
-                    removeGestures()
-                    restartApplication()
-                    isPaused = false
-                default:
-                    break
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {            
+                switch swipeGesture.direction {
+                    case .right:
+                        self.skView.scene?.isPaused = false
+                        if let scene = skView.scene as? PauseGame {
+                            scene.deleteNode(withName: "PauseNode")
+                            scene.play()
+                        }
+                        removeGestures()
+                        isPaused = false
+                    case .up:
+                        removeGestures()
+                        restartApplication()
+                        isPaused = false
+                    default:
+                        break
+                }
             }
-        }
     }
     
     func restartApplication () {
